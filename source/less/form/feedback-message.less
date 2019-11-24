@@ -1,0 +1,160 @@
+.form-feedback__list-message {
+  width: 320px;
+  text-align: center;
+  list-style: none;
+  background-color: #ececec;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+.form-feedback__achivments-item {
+  margin-bottom: 63px;
+}
+
+.form-feedback__achivments-wrapper {
+  background-color: #ececec;
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 25px;
+  padding-top: 10px;
+}
+
+.form-feedback__input {
+  display: block;
+  padding: 14px 20px 15px;
+  box-sizing: border-box;
+  min-height: 63px;
+  border: 2px solid lightgray;
+  border-radius: 2px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+
+.form-feedback__label-checkbox::before {
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  border-radius: 2px;
+  margin-left: 35px;
+  position: relative;
+  display: block;
+  /* padding-left: 69px; */
+  padding-top: -16px;
+  /* padding-bottom: 4px; */
+  /* font-size: 18px; */
+  /* line-height: 30px; */
+  cursor: pointer;
+  border: 2px solid;
+}
+
+&:hover::before {
+  border-color: black;
+}
+
+&:active::before {
+  border-color: #d22856;
+}
+
+.form-feedback__label-checkbox::after {
+  content: none;
+  position: absolute;
+  left: 8px;
+  top: 11px;
+  transform: rotate(-45deg);
+  width: 21px;
+  height: 10px;
+  border-left: 2px solid #d22856;
+  border-bottom: 2px solid #d22856;
+  margin-left: 37px;
+}
+
+&::after:hover {
+  border: 2px solid black;
+}
+
+&:checked + .form-feedback__label-checkbox {
+  &::after {
+    content: "";
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-feedback__achivments-wrapper {
+    width: 660px;
+    background-color: white;
+    order: 3;
+  }
+
+  .form-feedback__fieldset-messages {
+    width: 660px;
+    text-align: center;
+    list-style: none;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .form-feedback__label-checkbox {
+    position: relative;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    font-size: 18px;
+    line-height: 30px;
+    cursor: pointer;
+    width: 260px;
+    margin-bottom: -10px;
+  }
+
+  .form-feedback__list-message {
+    width: 606px;
+    text-align: center;
+    list-style: none;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    /* margin: 0 auto; */
+  }
+
+  .form-feedback__fieldset--achivments {
+    width: 616px;
+    border-style: groove;
+    border-color: #ececec;
+    border-image: initial;
+    padding-right: 55px;
+    margin-bottom: 69px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-feedback__list-message {
+    width: 900px;
+    text-align: center;
+    list-style: none;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-feedback__label-checkbox {
+    margin-right: -38px;
+  }
+
+  .form-feedback__achivments-wrapper {
+    width: 910px;
+  }
+}
