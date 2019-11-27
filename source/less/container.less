@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+  width: 100%;
+  max-width: 660px;
+  margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+
+  .container__main-menu {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .container_menu-background {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}

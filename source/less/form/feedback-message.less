@@ -33,12 +33,16 @@
   line-height: 30px;
 }
 
+.form-feedback__checkbox {
+  display: none;
+}
+
 
 .form-feedback__label-checkbox::before {
   content: "";
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-4px, 26px);
   width: 35px;
   height: 35px;
   border-radius: 2px;
@@ -65,8 +69,8 @@
 .form-feedback__label-checkbox::after {
   content: none;
   position: absolute;
-  left: 8px;
-  top: 11px;
+  left: 15px;
+  top: 107px;
   transform: rotate(-45deg);
   width: 21px;
   height: 10px;
@@ -91,6 +95,14 @@
     background-color: white;
     order: 3;
   }
+  .form-feedback__label-checkbox::before {
+    transform: translate(-50px, 35px);
+  }
+
+  .form-feedback__label-checkbox::after {
+    left: -43px;
+    top: 51px;
+  }
 
   .form-feedback__fieldset-messages {
     width: 660px;
@@ -112,6 +124,7 @@
     line-height: 30px;
     cursor: pointer;
     width: 260px;
+    margin-left: 40px;
     margin-bottom: -10px;
   }
 
