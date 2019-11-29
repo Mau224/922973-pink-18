@@ -86,7 +86,7 @@
   margin: 0 auto;
   background-position: top;
   /* z-index: 1; */
-      background-position-y: -24px;
+  background-position-y: -24px;
   background-position-x: 0;
 }
 
@@ -133,12 +133,13 @@
 
 @media (min-width: @tablet-width) {
   .main-nav__application-navigation {
-    background: url(../img/back-desktop-jpg.jpg);
+    background: url("../img/back-desktop-jpg.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 140%;
     padding-top: 60px;
     padding-bottom: 6px;
+    position: relative;
   }
 
   .main-nav__logo {
@@ -150,7 +151,7 @@
   .main-nav__hard-text {
     display: block;
     width: 185px;
-    bottom: 0px;
+    bottom: 0;
     margin-left: 77px;
     font-size: 40px;
   }
@@ -238,7 +239,7 @@
 
   .main-nav__wrapper-logo {
     display: flex;
-    width: auto;;
+    width: auto;
     padding-top: 0;
     justify-content: flex-start;
     padding-bottom: 40px;
