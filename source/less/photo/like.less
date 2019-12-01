@@ -1,0 +1,54 @@
+.like__wrapper {
+  display: flex;
+  align-items: baseline;
+  margin-left: 18px;
+  margin-top: auto;
+}
+
+.like__button {
+  margin-right: 18px;
+}
+
+.like__wrapper-main {
+  display: flex;
+  align-items: baseline;
+  margin-left: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .like__wrapper-main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    order: 1;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: -5px;
+  }
+
+  .like__button {
+    margin-right: -20px;
+  }
+
+  .like__button--main {
+    margin-right: 10px;
+  }
+
+  .like__wrapper {
+    width: 245px;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    margin-left: 0;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .like__wrapper-main {
+    display: flex;
+    align-items: baseline;
+    order: 1;
+    margin-left: auto;
+    margin-right: 60px;
+  }
+}

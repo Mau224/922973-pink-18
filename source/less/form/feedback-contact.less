@@ -1,0 +1,120 @@
+.form-feedback__list-contact {
+  width: 320px;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 40px;
+}
+
+.form-feedback__legend--contacts {
+  display: none;
+}
+
+.form-feedback__input--contacts {
+  width: 246px;
+  margin: 0 auto;
+}
+
+.form-feedback__label--contacts {
+  padding-left: 25px;
+  margin-left: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .form-feedback__contacts-wrapper {
+    margin: 0 auto;
+    display: flex;
+    width: 616px;
+    margin-left: 80px;
+    order: 2;
+  }
+
+  .form-feedback__input--contacts {
+    width: 376px;
+  }
+
+  .form-feedback__name-item--contacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    width: 289px;
+  }
+
+  .form-feedback__label--contacts {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .form-feedback__legend--contacts {
+    display: block;
+  }
+
+  .form-feedback__list-contact {
+    width: 480px;
+    list-style: none;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+  }
+
+  .form-feedback__fieldset--contacts {
+    border-width: 2px;
+    border-style: groove;
+    border-color: #ececec;
+    padding-right: 56px;
+    padding-left: 30px;
+    margin-left: -72px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-feedback__contacts-wrapper {
+    display: flex;
+    width: 936px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .form-feedback__list-contact {
+    width: 800px;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 90px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .form-feedback__name-item--phone::before {
+    content: "";
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    transform: translate(315px, -37px);
+    background-color: #ececee;
+    background-image: url("../img/phone-svg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .form-feedback__name-item--email::before {
+    content: "";
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    transform: translate(315px, -37px);
+    background-color: #ececee;
+    background-image: url("../img/mail-svg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .form-feedback__fieldset--contacts {
+    margin-top: -58px;
+    margin-bottom: 27px;
+    padding-left: 35px;
+    margin-left: 0;
+  }
+}

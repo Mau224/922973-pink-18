@@ -1,0 +1,257 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+
+  width: auto;
+  min-height: 51px;
+  background-color: #283645;
+}
+
+.main-nav__wrapper-logo {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  padding-left: 22px;
+  padding-bottom: 25px;
+  padding-top: 3px;
+  border-bottom: 1px solid black;
+}
+
+.main-nav__logo {
+  position: relative;
+  top: 10px;
+}
+
+.main-nav__toggle {
+  position: relative;
+  z-index: 2;
+  top: 10px;
+  outline: 0;
+  display: block;
+  background: none;
+  padding-right: 20px;
+
+  cursor: pointer;
+  border: none;
+}
+
+.first path:hover {
+  fill: #d22856;
+}
+
+.last path:hover {
+  fill: #d22856;
+}
+
+.first path:active {
+  opacity: 0.3;
+  fill: #d22856;
+}
+
+.last path:active {
+  opacity: 0.3;
+  fill: #d22856;
+}
+
+.main-nav--closed .main-nav__toggle--closed {
+  display: none;
+}
+
+.main-nav--opend .main-nav__toggle--opened {
+  display: none;
+}
+
+.main-nav__hard-text {
+  display: block;
+  width: 296px;
+  bottom: 30px;
+  position: relative;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.main-nav__application-navigation {
+  padding-top: 72px;
+  text-align: center;
+  background: url("../img/back-mobile-jpg.jpg");
+  background-color: #1e2631;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+  background-position: top;
+  /* z-index: 1; */
+  background-position-y: -24px;
+  background-position-x: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    position: relative;
+
+    width: auto;
+    min-height: 51px;
+
+    background-color: #283645;
+  }
+
+  .main-nav__wrapper-logo {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .main-nav__toggle {
+    position: relative;
+    z-index: 2;
+    outline: 0;
+
+    display: block;
+    background: none;
+
+    cursor: pointer;
+    border: none;
+    padding-right: 30px;
+  }
+
+  .main-nav--closed .main-nav__toggle--closed {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__toggle--opened {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__application-navigation {
+    background: url("../img/back-desktop-jpg.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    padding-top: 60px;
+    padding-bottom: 6px;
+    position: relative;
+  }
+
+  .main-nav__logo {
+    position: relative;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__hard-text {
+    display: block;
+    width: 185px;
+    bottom: 0;
+    margin-left: 77px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: @mobile-tablet-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--closed .user-list__item {
+    display: none;
+  }
+
+  .main-nav--closed {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav--opened {
+    background-color: #283645;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
+  .main-nav--nojs .site-list__item--active a {
+    padding-right: 21px;
+    padding-left: 21px;
+
+    text-align: left;
+  }
+
+  .main-nav--nojs .main-nav {
+    background-color: #283645;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .main-nav__hard-text {
+    display: block;
+    margin-bottom: 71px;
+    width: 226px;
+    bottom: 0;
+    font-size: 50px;
+    font-weight: normal;
+    margin-left: 48px;
+  }
+
+  .main-nav {
+    background: none;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+  }
+
+  .main-nav__logo {
+    position: relative;
+    width: 147px;
+    margin-right: 65px;
+  }
+
+  .main-nav__wrapper-logo {
+    display: flex;
+    width: auto;
+    padding-top: 0;
+    justify-content: flex-start;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__application-navigation {
+    width: 960px;
+    text-align: center;
+    background: none;
+    padding-top: 123px;
+    padding-bottom: 6px;
+  }
+}
