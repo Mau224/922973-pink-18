@@ -10,14 +10,42 @@
 </head>
 
 <body>
-  <header class="page-header page-header--active">
+
+<svg style="display:none">
+  <symbol viewBox="0 0 16 16" id="icon-comb__twitter">
+    <g>
+      <path d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+    </g>
+  </symbol>
+  <symbol viewBox="0 0 16 16" id="icon-comb__youtube">
+    <g>
+      <path d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z"/>
+    </g>
+  </symbol>
+  <symbol viewBox="0 0 16 16" id="icon-comb__facebook">
+    <g>
+      <path d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z"/>
+    </g>
+  </symbol>
+  <symbol viewBox="0 0 55 55" id="icon-comb__academy">
+    <g>
+      <path fill="#d22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+    </g>
+  </symbol>
+</svg>
+
+<header class="page-header page-header--active">
     <div class="page-header__wrapper">
       <div class="container_menu-background">
       <div class="container__main-menu">
         <nav class="main-nav main-nav--opend">
           <div class="main-nav__wrapper-logo">
             <div class="main-nav__logo">
-              <img class="main-nav__logo-image" src="img/logotype-white-mobile-svg.svg" width="74" height="32" alt="логотип">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="main-nav__logo-image" src="img/logotype-white-mobile-svg.svg" width="74" height="32" alt="логотип">
+              </picture>
             </div>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
               <svg class="main-nav__toggle--first main-nav__toggle--opened" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="24" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
@@ -58,8 +86,16 @@
   </div>
     <section class="main-nav__application-navigation">
       <p class="main-nav__hard-text">Взгляните на жизнь иначе!</p>
-      <div class="application-navigation__photo-wrraper">
-        <img class="application-navigation__font-photo" src="img/iphone-5-in-hand-png.png" alt="рука с телефоном">
+      <div class="application-navigation__photo-wrapper">
+        <picture>
+<!--          <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webP 1x, img/iphone-hand-desktop@2x.webP 2x">-->
+<!--          <source media="(min-width: 660px)" srcset="img/iphone-6-copy.webP 1x, img/iphone-6-copy@2x.webP 2x">-->
+<!--          <source  srcset="img/iphone-5-in-hand-png.webP 1x">-->
+
+          <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/iphone-6-copy.png 1x, img/iphone-6-copy@2x.png 2x">
+          <img class="application-navigation__font-photo" src="img/iphone-5-in-hand-png.png" alt="рука с телефоном">
+        </picture>
       </div>
       <div class="application-navigation__link-wrapper">
         <a href="#" class="application-navigation__link">Скачать приложение</a>
@@ -97,9 +133,9 @@
       </ul>
       <div class="presentation__clock-wrapper">
         <div class="presentation__clock-text-wrraper">
-          <p class="presentation__clock-headline">Эффект на 24 часа</p>
+          <p class="presentation__clock-headline">Эффект на 24 часа!</p>
           <p class="presentation__clock-text">Британские ученые провели исследованияи доказали, что положительный
-            эффектот использования приложения длится целые сутки!</p>
+            эффект от использования приложения длится целые сутки!</p>
           <a href="#" class="presentation__clock-link">Узнать больше об исследовании</a>
         </div>
       </div>
@@ -228,19 +264,19 @@
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">Твитер</a>
+            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy"><svg class="site-list__icon-comb" width="16" height="16"><use xlink:href="#icon-comb__twitter"></use></svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><svg class="site-list__icon-comb" width="16" height="16"><use xlink:href="#icon-comb__facebook"></use></svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">Ютюб</a>
+            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"><svg class="site-list__icon-comb" width="16" height="16"><use xlink:href="#icon-comb__youtube"></use></svg></a>
           </li>
         </ul>
       </div>
       <p class="footer__copyright copyright">
         <b class="footer__copyright-text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg class="site-list__icon-copyright" width="16" height="16"><use xlink:href="#icon-comb__academy"></use></svg></a>
       </p>
     </div>
   </footer>
