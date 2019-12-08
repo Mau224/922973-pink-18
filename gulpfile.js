@@ -5,6 +5,7 @@ var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var less = require("gulp-less");
 var postcss = require("gulp-postcss");
+var webp = require("gulp-webp");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
