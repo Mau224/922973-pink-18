@@ -1,11 +1,11 @@
 .contact {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
 #map {
-  width: 320px;
+  width: 100%;
   height: 200px;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .contact-map__wrapper {
-  width: 320px;
+  width: 100%;
   position: relative;
 }
 
@@ -43,9 +43,7 @@
 }
 
 .contact-map__inner::before {
-  display: none;
   content: "";
-  top: 50px;
   margin-left: -170px;
   position: absolute;
   width: 0;
@@ -53,6 +51,7 @@
   border-left: 179px solid transparent;
   border-right: 179px solid transparent;
   border-top: 57px solid white;
+  z-index: 99;
 }
 
 .contact-item a {
@@ -118,7 +117,6 @@
 
 @media (min-width: @tablet-width) {
   .contact {
-    width: 660px;
     margin: 0 auto;
     text-align: center;
     list-style: none;
@@ -126,12 +124,10 @@
   }
 
   #map {
-    width: 660px;
     height: 400px;
   }
 
   .contact-wrapper {
-    width: 660px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -167,44 +163,31 @@
     margin-top: -42px;
   }
 
-  .contact-map__inner {
-    width: 100%;
-  }
-
   .contact-map__inner::before {
-    width: 0;
     height: 0;
     border-left: 350px solid transparent;
     border-right: 350px solid transparent;
     border-top: 100px solid white;
-    top: 3px;
-    margin-left: -359px;
+    margin-left: -590px;
     position: absolute;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contact {
-    width: 960px;
     margin: 0 auto;
     text-align: center;
   }
 
   #map {
-    width: 960px;
     height: 400px;
   }
 
+
   .contact-map__inner::before {
-    width: 0;
-    height: 0;
-    border-left: 480px solid transparent;
-    border-right: 480px solid transparent;
-    border-top: 100px solid white;
-    top: 49px;
-    margin-left: -481px;
-    position: absolute;
+    border: 20px solid transparent; border-top: 20px solid green;
   }
+
 
   .contact-list {
     width: auto;
@@ -222,12 +205,12 @@
   }
 
   .contact-map {
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
   }
 
   .contact-wrapper {
-    width: 960px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     margin: 0 auto;

@@ -1,43 +1,58 @@
 .like__wrapper {
   display: flex;
-  align-items: baseline;
-  margin-left: 18px;
+  align-items: center;
+  justify-content: space-between;
   margin-top: auto;
+  margin-left: 28px;
 }
 
 .like__button {
-  margin-right: 18px;
+  order: 2;
+  margin-right: 32px;
 }
 
 .like__wrapper-main {
   display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
   align-items: baseline;
+}
+
+.like__button--main {
+  margin-right: 32px;
+  order: 2;
 }
 
 @media (min-width: @tablet-width) {
   .like__wrapper-main {
+    width: 200px;
     display: flex;
     flex-direction: row-reverse;
     align-items: baseline;
-    order: 1;
+    justify-content: normal;
     margin-left: auto;
     margin-right: 20px;
   }
 
   .like__button {
-    margin-right: -20px;
+    order: 0;
+    padding-right: 70px;
+    margin-right: 0;
   }
 
   .like__button--main {
     margin-right: 10px;
+    order: 2;
   }
 
   .like__wrapper {
-    width: 245px;
+    width: 100%;
     align-items: baseline;
     flex-wrap: nowrap;
     margin-left: 0;
     flex-direction: row-reverse;
+    padding-left: 28px;
   }
 }
 

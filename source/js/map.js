@@ -1,16 +1,27 @@
 'use strict';
-
-var map;
-
-var initMap = function () {
+function initMap() {
+  var mapProp = {
+    center: new google.maps.LatLng(59.938624, 30.323085),
+    zoom: 16,
+    disableDefaultUI: true,
+  };
+  var map = new google.maps.Map(document.getElementById("map"), mapProp);
+  var coordinates = {lat: 59.938624, lng: 30.323085};
+  var image = 'img/map-marker-svg.svg';
   var marker = new google.maps.Marker({
-    position: {lat: 59.938813, lng:  30.323058},
+    position: coordinates,
     map: map,
-    icon: 'map-marker-svg.svg'
+    icon: image,
   });
+  var noPoi = [
+    {
+      featureType: "poi",
+      stylers: [
+        { visibility: "off" }
+      ]
+    }
+  ];
 
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 59.938813, lng: 30.323058},
-    zoom: 8
-  });
-};
+  map.setOptions({styles: noPoi});
+}
+

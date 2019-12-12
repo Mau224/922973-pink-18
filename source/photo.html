@@ -8,6 +8,28 @@
   <meta name = "format-detection" content = "telephone=no">
 </head>
 <body>
+
+<svg style="display:none">
+  <symbol viewBox="0 0 48 48" id="icon-comb__crop">
+    <g>
+      <path fill = "none" d = "M0 0h48v48H0V0z"/>
+      <path  d = "M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"/>
+    </g>
+  </symbol>
+  <symbol viewBox="0 0 48 48" id="icon-comb__fill">
+    <g>
+      <path fill="none" d="M0 0h48v48H0V0z"/>
+      <path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 0 0 0-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z"/>
+    </g>
+  </symbol>
+  <symbol viewBox="-35.422 -7.96 31.92 31.92" id="icon-comb__contrast">
+    <g>
+      <path d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/>
+      <path d="M-19.462 16.331a8.519 8.519 0 0 0 8.52-8.52 8.518 8.518 0 0 0-8.52-8.519"/>
+    </g>
+  </symbol>
+</svg>
+
 <header class = "page-header page-header--active">
   <div class = "page-header__wrapper--active">
     <div class = "container_menu-background">
@@ -75,8 +97,7 @@
 
 <main class = "main-photo">
   <section class = "reviews">
-    <div class = "container">
-      <div class = "reviews__wrapper">
+    <div class = "reviews__wrapper">
         <h2 class = "reviews__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
         <div class = "reviews-block__wrapper-main">
           <img class = "reviews__photo-img" src = "img/panorama-desktop-jpg.jpg" width = "320" height = "180" alt = "фото автора">
@@ -91,7 +112,7 @@
             </div>
           </div>
         </div>
-        <div class = "reviews-block__wrapper-blocks">
+      <div class = "container">
           <div class = "reviews-block__wrapper">
             <div class = "reviews__item">
               <picture>
@@ -216,7 +237,6 @@
                 </a>
                 <p class = "reviews__author-like">Нравится: 2560</p>
               </div>
-            </div>
           </div>
         </div>
       </div>
@@ -228,43 +248,30 @@
       <p class = "photo-editor__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
     </header>
 
-    <div class = "photo-editor__form-wrapper content-wrapper">
-      <form class = "form-photo" action = "https://echo.htmlacademy.ru/" enctype = "multipart/form-data"
-            method = "post">
+    <div class = "photo-editor__form-wrapper photo-editor__content-wrapper">
+      <form class = "photo-editor__form-main" action = "https://echo.htmlacademy.ru/" enctype = "multipart/form-data"  method = "post">
 
-        <div class = "form-photo__controls">
-          <ul class = "form-photo__filters-buttons">
-            <li class = "filters-buttons__items">
-              <svg class = "active-filter" xmlns = "http://www.w3.org/2000/svg" width = "48" height = "48" version = "1" viewBox = "0 0 48 48">
-                <path fill = "none" d = "M0 0h48v48H0V0z"/>
-                <path d = "M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"/>
-              </svg>
+        <div class = "photo-editor__form-photo">
+          <ul class = "photo-editor__filters-buttons">
+            <li class = "photo-editor__filters-item">
+              <svg class="photo-editor__icon-comb"><use xlink:href="#icon-comb__crop"></use></svg>
             </li>
-            <li class = "filters-buttons__items">
-              <svg class = "filter-svg" xmlns = "http://www.w3.org/2000/svg" width = "48" height = "48" version = "1" viewBox = "0 0 48 48">
-                <path fill = "none" d = "M0 0h48v48H0V0z"/>
-                <path d = "M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 0 0 0-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z"/>
-              </svg>
+            <li class = "photo-editor__filters-item">
+              <svg class="photo-editor__icon-comb"><use xlink:href="#icon-comb__fill"></use></svg>
             </li>
-            <li class = "filters-buttons__items">
-              <svg class = "filter-svg" xmlns = "http://www.w3.org/2000/svg" width = "31.92" height = "31.92" version = "1" viewBox = "-35.422 -7.96 31.92 31.92">
-                <path d = "M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/>
-                <path d = "M-19.462 16.331a8.519 8.519 0 0 0 8.52-8.52 8.518 8.518 0 0 0-8.52-8.519"/>
-              </svg>
+            <li class = "photo-editor__filters-item">
+              <svg class="photo-editor__icon-comb"><use xlink:href="#icon-comb__contrast"></use></svg>
             </li>
           </ul>
-          <ul class = "form-photo__filters">
-            <li class = "filters-range"></li>
-            <div class = "disable-filters">
-              <li class = "filters-range-two disable"></li>
-              <li class = "filters-range-tree disable"></li>
-            </div>
+          <ul class = "photo-editor__form-filters">
+            <li class = "photo-editor__filters-range"><div class="photo-editor__filters-border"></div></li>
+            <li class = "photo-editor__filters-range--two photo-editor__filters-range--disable"><div class="photo-editor__filters-border--two"></div></li>
+            <li class = "photo-editor__filters-range--tree photo-editor__filters-range--disable"><div class="photo-editor__filters-border--tree"></div></li>
           </ul>
-        </div>
-
-        <div class = "form-photo__buttons">
-          <button class = "form-photo__button button button--rounded button--red" type = "submit">Запостить</button>
-          <button class = "form-photo__button button button--rounded button--gray" type = "reset">Отмена</button>
+          <div class = "photo-editor__buttons">
+            <button class = "photo-editor__button button button--rounded button--red" type = "submit">Запостить</button>
+            <button class = "photo-editor__button button button--rounded button--gray" type = "reset">Отмена</button>
+          </div>
         </div>
       </form>
     </div>
