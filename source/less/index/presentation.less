@@ -3,6 +3,7 @@
   width: inherit;
   padding-right: 10px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   text-align: center;
   list-style: none;
@@ -30,13 +31,13 @@
   font-size: 18px;
   font-weight: bold;
   margin-top: 40px;
-  padding-left: 9px;
   padding-top: 1px;
   width: 250px;
   line-height: 21px;
 }
 
 .presentation__text {
+  width: 254px;
   font-size: 14px;
   line-height: 1.71;
   color: #283645;
@@ -66,6 +67,7 @@
   }
 
   .presentation__clock-text {
+    width: 295px;
     font-size: 14px;
   }
 
@@ -144,7 +146,7 @@
     background-position: top left;
     margin-bottom: 0;
     padding-top: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     margin-top: 71px;
   }
 
@@ -154,7 +156,7 @@
   }
 
   .presentation__clock-headline {
-    width: 154px;
+    width: 170px;
     font-size: 30px;
     font-weight: bold;
     margin: 0;
@@ -166,25 +168,27 @@
   }
 
   .presentation__text {
-    width: 293px;
+    width: 294px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .presentation__list {
-    width: 870px;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: none;
     background-color: none;
     margin-top: none;
-    padding-left: 8px;
+    padding-left: 0;
     z-index: 5;
-    padding-right: 50px;
   }
 
   .presentation__item {
@@ -255,9 +259,8 @@
 
   .presentation__clock-wrapper {
     width: 960px;
-    display: flex;
     flex-direction: row;
-    background-color: #ececec;
+    background: #ececec;
     position: relative;
     padding-bottom: 124px;
     padding-left: auto;
@@ -265,7 +268,7 @@
   }
 
   .presentation__text {
-    width: 226px;
+    width: 240px;
     font-size: 18px;
     line-height: 1.71;
     /* color: #283645; */
@@ -276,7 +279,7 @@
 
   .presentation__clock-wrapper::before {
     width: 380px;
-    left: -29px;
+
     height: 400px;
     font-size: 120px;
   }
@@ -285,16 +288,17 @@
     content: "";
     color: #d22856;
     top: 114px;
-    left: 40px;
+    left: 70px;
     border: #d22856 solid 15px;
     position: absolute;
-    width: 214px;
+    width: 213px;
     height: 216px;
     border-radius: 50%;
     text-align: center;
   }
 
   .presentation__clock-text {
+    width: 525px;
     font-size: 18px;
     margin-bottom: 33px;
   }

@@ -37,20 +37,20 @@
   border: none;
 }
 
-.first path:hover {
+.main-nav__toggle--first path:hover {
   fill: #d22856;
 }
 
-.last path:hover {
+.main-nav__toggle--last path:hover {
   fill: #d22856;
 }
 
-.first path:active {
+.main-nav__toggle--first path:active {
   opacity: 0.3;
   fill: #d22856;
 }
 
-.last path:active {
+.main-nav__toggle--last path:active {
   opacity: 0.3;
   fill: #d22856;
 }
@@ -66,7 +66,7 @@
 .main-nav__hard-text {
   display: block;
   width: 296px;
-  bottom: 30px;
+  bottom: 50px;
   position: relative;
   font-size: 24px;
   font-weight: 300;
@@ -75,6 +75,7 @@
   color: #ffffff;
   margin-left: 20px;
 }
+
 
 .main-nav__application-navigation {
   padding-top: 72px;
@@ -88,6 +89,10 @@
   /* z-index: 1; */
   background-position-y: -24px;
   background-position-x: 0;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/back-mobile-jpg@2x.jpg");
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -99,6 +104,22 @@
 
     background-color: #283645;
   }
+
+  .main-nav__logo-image {
+    width: 147px;
+    height: 40px;
+    filter: brightness(10);
+  }
+
+  .main-nav__logo-image:hover {
+    filter: brightness(1);
+  }
+
+  .main-nav__logo-image:active {
+    filter: brightness(10);
+    opacity: 0.3;
+  }
+
 
   .main-nav__wrapper-logo {
     display: flex;
@@ -133,6 +154,7 @@
 
 @media (min-width: @tablet-width) {
   .main-nav__application-navigation {
+    order: 2;
     background: url("../img/back-desktop-jpg.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
@@ -140,7 +162,13 @@
     padding-top: 60px;
     padding-bottom: 6px;
     position: relative;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 166%;
+    }
   }
+
 
   .main-nav__logo {
     position: relative;
@@ -204,7 +232,7 @@
   .main-nav__hard-text {
     display: block;
     margin-bottom: 71px;
-    width: 226px;
+    width: 228px;
     bottom: 0;
     font-size: 50px;
     font-weight: normal;
@@ -223,6 +251,10 @@
 @media (min-width: @desktop-width) {
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__logo-image {
+    filter: none;
   }
 
   .main-nav {

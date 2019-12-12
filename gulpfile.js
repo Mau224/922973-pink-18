@@ -5,6 +5,7 @@ var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var less = require("gulp-less");
 var postcss = require("gulp-postcss");
+var webp = require("gulp-webp");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
@@ -20,6 +21,12 @@ gulp.task("css", function () {
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
+
+gulp.task("webp", function (){
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 80}))
+    .pipe(gulp.dest("source/img"));
+})
 
 gulp.task("server", function () {
   server.init({
