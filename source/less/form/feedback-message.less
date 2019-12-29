@@ -1,23 +1,21 @@
 .form-feedback__list-message {
-  width: 320px;
+  width: 100%;
   text-align: center;
   list-style: none;
   background-color: #ececec;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 0;
+  padding-bottom: 35px;
   padding-left: 0;
   margin: 0 auto;
 }
 
 .form-feedback__achivments-item {
-  margin-bottom: 63px;
+  margin-bottom: 0;
 }
 
 .form-feedback__achivments-wrapper {
   background-color: #ececec;
-  width: 320px;
   margin: 0 auto;
-  padding-right: 25px;
   padding-top: 10px;
 }
 
@@ -31,6 +29,7 @@
   font: inherit;
   font-size: 18px;
   line-height: 30px;
+  width: 276px;
 }
 
 .form-feedback__checkbox {
@@ -40,7 +39,8 @@
 .form-feedback__label-checkbox {
   position: relative;
   display: block;
-  padding-top: 5px;
+  padding-top: 1px;
+  margin-top: -5px;
   padding-bottom: 4px;
   font-size: 18px;
   text-align: left;
@@ -48,7 +48,21 @@
   cursor: pointer;
   width: 260px;
   margin-left: 40px;
-  margin-bottom: -10px;
+  margin-bottom: 12px;
+
+  &:hover::before {
+    border-color: black;
+  }
+
+  &:active::before {
+    border-color: #d22856;
+  }
+}
+
+&:checked + .form-feedback__label-checkbox {
+  &::after {
+    content: "";
+  }
 }
 
 
@@ -63,21 +77,10 @@
   margin-left: 35px;
   position: relative;
   display: block;
-  /* padding-left: 69px; */
   padding-top: -16px;
-  /* padding-bottom: 4px; */
-  /* font-size: 18px; */
-  /* line-height: 30px; */
   cursor: pointer;
-  border: 2px solid;
-}
-
-&:hover::before {
-  border-color: black;
-}
-
-&:active::before {
-  border-color: #d22856;
+  border: 2px solid #e5e5e5;
+  background-color: white;
 }
 
 .form-feedback__label-checkbox::after {
@@ -94,24 +97,22 @@
 }
 
 .label-checkbox__wrapper {
-  padding-left: 40px;
+  padding-left: 50px;
 }
 
-&::after:hover {
-  border: 2px solid black;
-}
-
-&:checked + .form-feedback__label-checkbox {
-  &::after {
-    content: "";
-  }
-}
 
 @media (min-width: @tablet-width) {
   .form-feedback__achivments-wrapper {
-    width: 660px;
-    background-color: white;
+    width: 616px;
+    background-color: #ffffff;
     order: 3;
+    padding-top: 1px;
+    margin-top: -18px;
+  }
+
+  .form-feedback__input {
+    width: 100%;
+    margin-right: 20px;
   }
 
   .form-feedback__label-checkbox::before {
@@ -119,12 +120,12 @@
   }
 
   .form-feedback__label-checkbox::after {
-    left: -43px;
+    left: -23px;
     top: 51px;
   }
 
   .form-feedback__fieldset-messages {
-    width: 660px;
+    width: 100%;
     text-align: center;
     list-style: none;
     background-color: white;
@@ -144,7 +145,9 @@
     cursor: pointer;
     width: 260px;
     margin-left: 40px;
-    margin-bottom: -10px;
+    margin-bottom: 21px;
+    margin-top: -17px;
+    padding-left: 20px;
   }
 
   .form-feedback__list-message {
@@ -153,18 +156,21 @@
     list-style: none;
     background-color: white;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 27px;
     padding-left: 0;
-    /* margin: 0 auto; */
   }
 
-  .form-feedback__fieldset--achivments {
-    width: 616px;
-    border-style: groove;
-    border-color: #ececec;
-    border-image: initial;
-    padding-right: 55px;
-    margin-bottom: 69px;
+  .form-feedback__fieldset {
+    &--achivments {
+      width: 916px;
+      border-style: groove;
+      border-color: #ececec;
+      border-image: initial;
+      margin-bottom: 69px;
+      border-width: 2px;
+      padding: 0;
+      padding-left: 16px;
+    }
   }
 
   .label-checkbox__wrapper {
@@ -174,27 +180,85 @@
 
 @media (min-width: @desktop-width) {
   .form-feedback__list-message {
-    width: 900px;
+    width: 100%;
+    justify-content: center;
     text-align: center;
     list-style: none;
     background-color: white;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 35px;
     padding-left: 0;
     /* margin: 0 auto; */
     display: flex;
     flex-wrap: wrap;
   }
 
+  .form-feedback__input {
+    width: 338px;
+
+    &--padding {
+      width: 380px;
+    }
+  }
+
   .form-feedback__label-checkbox {
-    margin-right: -38px;
+    margin-right: -16px;
+    &--hotel {
+      order: 6;
+    }
+
+    &--beach {
+      order: 4;
+    }
+
+    &--souvenirs {
+      order: 5;
+    }
+
+    &--chuck {
+      order: 2;
+    }
+
+    &--tower {
+      order: 3;
+    }
   }
 
   .label-checkbox__wrapper {
-    padding-left: 33px;
+    padding-left: 40px;
   }
 
   .form-feedback__achivments-wrapper {
-    width: 910px;
+    width: 100%;
   }
+
+  //.form-feedback__label-checkbox {
+  //  &--beach {
+  //    order: 4;
+  //  }
+  //}
+  //
+  //.form-feedback__label-checkbox {
+  //  &--hotel {
+  //    order: 6;
+  //  }
+  //}
+  //
+  //.form-feedback__label-checkbox {
+  //  &--souvenirs {
+  //    order: 5;
+  //  }
+  //}
+  //
+  //.form-feedback__label-checkbox {
+  //  &--chuck {
+  //    order: 2;
+  //  }
+  //}
+  //
+  //.form-feedback__label-checkbox {
+  //  &--tower {
+  //    order: 3;
+  //  }
+  //}
 }

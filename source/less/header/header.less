@@ -25,9 +25,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header .page-header--active {
-    border: none, #283645;
-    margin: 0 auto;
+  .page-header .page-header {
+    &--active {
+      border: none, #283645;
+      margin: 0 auto;
+    }
   }
 
   .page-header__wrapper {
@@ -37,5 +39,26 @@
     background-repeat: no-repeat;
     background-size: center;
     overflow: hidden;
+
+    &--active {
+      background: none;
+    }
   }
+
+  .page-header {
+    background: none;
+
+    &--nomain {
+      background: url("../img/back-desktop-jpg.jpg") no-repeat 50%;
+    }
+  }
+
+  //.page-header__wrapper {
+  //  width: auto;
+  //  background: url("../img/back-desktop-jpg.jpg");
+  //  background-position: bottom;
+  //  background-repeat: no-repeat;
+  //  background-size: center;
+  //  overflow: hidden;
+  //}
 }

@@ -24,4 +24,3 @@ function initMap() {
 
   map.setOptions({styles: noPoi});
 }
-

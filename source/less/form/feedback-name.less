@@ -3,19 +3,30 @@
   border: 2px solid #e5e5e5;
 }
 
+.form-feedback__label--name {
+  width: 320px;
+}
+
 .form-feedback__name-wrapper {
   padding-bottom: 42px;
 }
 
 .form-feedback__name-item {
-  margin-bottom: 54px;
+  width: 100%;
+  margin-bottom: 16px;
+  padding-top: 2px;
 }
 
 .form-feedback__list {
-  width: 230px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: flex-start;
   list-style: none;
-  padding-left: 0;
+  padding-left: 21px;
+  margin-bottom: -12px;
+  margin-top: 20px;
 }
 
 .form-feedback__label {
@@ -26,6 +37,7 @@
   margin-bottom: 5px;
   line-height: 30px;
   text-transform: uppercase;
+  padding-left: 21px;
 }
 
 .form-feedback__input:focus {
@@ -39,62 +51,84 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form-feedback__fieldset--name {
-    width: 660px;
-    margin: 0 auto;
+  .form-feedback__fieldset {
+    border: none;
+
+    &--name {
+      width: 660px;
+      margin: 0 auto;
+    }
   }
 
-  .form-feedback__input--name {
-    width: 521px;
+  .form-feedback__input {
+    &--name {
+      width: 521px;
+    }
   }
-
 
   .form-feedback__name-item {
     width: 660px;
     text-align: left;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
+    margin-bottom: 47px;
   }
 
-  .form-feedback__fieldset {
-    border: none;
-  }
+  .form-feedback__label {
+    &--name {
+      margin-right: 20px;
+      width: 76px;
+    }
 
-  .form-feedback__label--name {
-    margin-right: 20px;
+    &--padding {
+      margin-right: -8px;
+    }
   }
 
   .form-feedback__list {
-    width: 660px;
-    /* margin: 0 auto; */
-    /* text-align: center; */
-    /* list-style: none; */
+    width: auto;
     padding-left: 0;
   }
 
   .form-feedback__name-wrapper {
+    width: 50%;
     order: -1;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .form-feedback__fieldset--name {
-    width: 200px;
-    margin: 0 auto;
-    margin-right: 74px;
-    margin-top: 37px;
+  .form-feedback__fieldset {
+    &--name {
+      margin: 0 auto;
+      margin-right: 74px;
+      margin-top: 37px;
+    }
+  }
+
+  .form-feedback__label {
+    &--name {
+      margin-right: 20px;
+      padding-top: 17px;
+      padding-left: 9px;
+    }
+
+    &--padding {
+      margin-right: -51px;
+    }
+  }
+
+  .form-feedback__name-item {
+    margin-bottom: 52px;
   }
 
   .form-feedback__list {
     width: 960px;
-    /* margin: 0 auto; */
-    /* text-align: center; */
-    /* list-style: none; */
     padding-left: 0;
   }
 
-  .form-feedback__input--name {
-    width: 336px;
+  .form-feedback__input {
+    &--name {
+      width: 336px;
+    }
   }
 }

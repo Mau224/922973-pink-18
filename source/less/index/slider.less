@@ -9,9 +9,11 @@
 .slider::before {
   content: "";
   position: absolute;
-  width: 320px;
+  width: 660px;
   height: 100px;
-  top: 333px;
+  top: 330px;
+  left: -180px;
+  background-color: #f2f2f2;
   transform: skewY(-3.5deg);
   right: 0;
 }
@@ -116,23 +118,34 @@
   }
 
   .slider-reviews {
-    width: 602px;
+    width: 617px;
+    height: 79px;
     font-size: 18px;
-    margin-bottom: 0;
-    padding-left: 34px;
-    line-height: 33px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
   }
 
   .slide__author-info {
+    font-family: "Open Sans", "Arial", sans-serif;
     display: block;
-    margin-top: 7px;
-    margin-left: 30px;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
   }
 
   .slider h3 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 0;
-    margin-top: 35px;
+    margin-top: 26px;
   }
 
   .slide.active {
@@ -165,8 +178,8 @@
   .slide-control__desktop-right {
     position: absolute;
     display: block;
-    top: 144px;
-    right: -155px;
+    right: -140px;
+    top: 200px;
     opacity: 0.3;
     transform: rotate(180deg);
     cursor: pointer;
@@ -175,9 +188,9 @@
   .slide-control__desktop-left {
     position: absolute;
     display: block;
-    top: 144px;
+    top: 200px;
     opacity: 0.3;
-    left: -123px;
+    left: -139px;
     cursor: pointer;
   }
 
@@ -201,22 +214,28 @@
     background: url("../img/quotes-svg.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: calc(100% + -244px);
-    background-position-x: 306px;
-    padding-top: 94px;
-    margin: auto;
-    margin-top: 90px;
-    margin-bottom: 150px;
+    background-position-y: calc(100% + -259px);
+    background-position-x: 294px;
+    padding-top: 183px;
+    margin: 11px auto 188px;
   }
 
   .slider-reviews {
-    margin-top: 20px;
+    margin-top: -5px;
     width: 700px;
     padding-left: 0;
+    margin-left: -21px;
   }
 
   .slider h3 {
     font-size: 24px;
-    margin-left: 29px;
+    margin-left: 4px;
+    margin-top: 28px;
+  }
+
+  .slide__author-info {
+    font-size: 18px;
+    margin-left: 4px;
+    margin-top: 4px;
   }
 }
