@@ -38,7 +38,7 @@
 
 
 .form-feedback__fieldset {
-  width: 100%;
+  width: 320px;
   margin: 0 auto;
   border: none;
   position: relative;
@@ -56,8 +56,6 @@
   color: #d22856;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-left: 38px;
-  padding-right: 33px;
   font-size: 18px;
 }
 
@@ -72,13 +70,11 @@
   line-height: 18px;
   letter-spacing: normal;
   text-align: center;
-  padding-top: 20px;
-  padding-left: 0;
-  padding-right: 37px;
 }
 
 @media (min-width: @tablet-width) {
   .form-feedback__fieldset {
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -97,8 +93,13 @@
     margin-bottom: 71px;
 
     &--mobile-hidden {
-        display: inline-block;
+      display: inline-block;
     }
+  }
+
+  .form-feedback__legend-text {
+    padding-right: 25px;
+    padding-left: 25px;
   }
 }
 

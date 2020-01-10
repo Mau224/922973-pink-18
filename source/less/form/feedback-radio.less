@@ -8,6 +8,12 @@
 .form-feedback__radio-item {
   margin-bottom: 20px;
   margin-top: 10px;
+
+  &:checked + .form-feedback__label-radio {
+    &::after {
+      content: "";
+    }
+  }
 }
 
 .form-feedback__radio {
@@ -71,10 +77,10 @@
   padding-left: 20px;
 }
 
-  &:checked + .form-feedback__label-radio {
-    &:after {
-      content: "";
-    }
+&:checked + .form-feedback__label-radio {
+  &::after {
+    content: "";
+  }
 }
 
 @media (min-width: @tablet-width) {
