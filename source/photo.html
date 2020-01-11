@@ -1,297 +1,281 @@
 <!DOCTYPE html>
-<html lang = "ru">
+<html lang="ru">
 <head>
-  <meta charset = "utf-8">
+  <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link href = "css/style.css" rel = "stylesheet">
-  <meta name = "viewport" content = "width=device-width, initial-scale=1">
-  <meta name = "format-detection" content = "telephone=no">
+  <link href="css/style.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
 </head>
 <body>
-<header class = "page-header page-header--active">
-  <div class = "page-header__wrapper--active">
-    <div class = "container_menu-background">
-      <div class = "container__main-menu">
-        <nav class = "main-nav main-nav--closed">
-          <div class = "main-nav__wrapper-logo">
-            <div class = "main-nav__logo">
-              <a class="main-nav__header-link" href="index.html">
-                <picture>
-                  <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-                  <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet-pink.svg">
-                  <img class="main-nav__logo-image" src="img/logotype-white-mobile-svg.svg" width="74" height="32" alt="логотип">
-                </picture>
-              </a>
-            </div>
-            <button class = "main-nav__toggle" type = "button"><span class = "visually-hidden">Открыть меню</span>
-              <svg class = "main-nav__toggle--first main-nav__toggle--opened" version = "1.0" id = "Layer_1"
-                    xmlns = "http://www.w3.org/2000/svg" xmlns:xlink = "http://www.w3.org/1999/xlink" x = "0px" y = "0px"
-                    width = "50" height = "24" viewBox = "0 0 49.945 24.007"
-                    enable-background = "new 0 0 49.945 24.007" xml:space = "preserve">
-                <g id = "miu">
-                  <g id = "editor_list_view_hambuger_menu_glyph">
-                    <g>
-                      <path id = "path-1" fill = "#FFFFFF" d = "M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-                    </g>
-                    <g>
-                      <path id = "path-1_1_" fill = "#FFFFFF" d = "M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+  <header class="page-header page-header--active page-header--nomain">
+    <div class="page-header__wrapper--active">
+      <div class="container_menu-background">
+        <div class="container__main-menu">
+          <nav class="main-nav main-nav--closed">
+            <div class="main-nav__wrapper-logo">
+              <div class="main-nav__logo">
+                <a class="main-nav__header-link" href="index.html">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                    <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet-pink.svg">
+                    <img class="main-nav__logo-image" src="img/logotype-white-mobile-svg.svg">
+                  </picture>
+                </a>
+              </div>
+              <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+                <svg class="main-nav__toggle--first main-nav__toggle--opened" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="24" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+                  <g id="miu">
+                    <g id="editor_list_view_hambuger_menu_glyph">
+                      <g>
+                        <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"></path>
+                      </g>
+                      <g>
+                        <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"></path>
+                      </g>
                     </g>
                   </g>
-                </g>
-              </svg>
-              <svg class = "main-nav__toggle--last main-nav__toggle--closed" version = "1.0" id = "Layer_1"
-                    xmlns = "http://www.w3.org/2000/svg" xmlns:xlink = "http://www.w3.org/1999/xlink" x = "0px" y = "0px"
-                    width = "24" height = "23" viewBox = "0 0 23.867 23.867"
-                    enable-background = "new 0 0 23.867 23.867" xml:space = "preserve">
-                <path fill = "#FFFFFF" d = "M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-              </svg>
-            </button>
+                </svg>
+                <svg class="main-nav__toggle--last main-nav__toggle--closed" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24" height="23" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+                  <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a href="index.html">Главная</a>
+                </li>
+                <li class="site-list__item site-list__item--active">
+                  <a href="#">Фотографии</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="form.html">Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="https://htmlacademy.ru/">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="main-info__background">
+      <h1 class="main-info__font-text">Фотографии пользователей</h1>
+    </div>
+  </header>
+
+  <main class="main-photo">
+    <section class="reviews">
+      <div class="reviews__wrapper">
+          <h2 class="reviews__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+          <div class="reviews-block__wrapper-main">
+            <img class="reviews__photo-img" src="img/panorama-desktop-jpg.jpg" width="320" height="135" alt="фото автора">
+            <div class="reviews__item-main">
+              <cite class="reviews__author-name--main"><strong>Анна </strong>(3 часов назад)</cite>
+              <p class="reviews__text reviews__text--active">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="like__wrapper-main">
+                <a class="like__button--main" href="#">
+                  <img class="reviews__author-like-image" src="img/icon-heart-svg.svg" width="13" height="12" alt="лайк">
+                </a>
+                <p class="reviews__author-like--main">Нравится: 215</p>
+              </div>
+            </div>
           </div>
-          <div class = "main-nav__wrapper">
-            <ul class = "main-nav__list site-list">
-              <li class = "site-list__item">
-                <a href = "index.html">Главная</a>
+        <div class="container">
+            <div class="reviews-block__wrapper">
+              <div class="reviews__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-1-mobile-jpg.webp 1x, img/photo-1-mobile-jpg@2x.webp 2x">
+
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="reviews__author-image" src="img/photo-1-mobile-jpg.jpg 1x, img/photo-1-mobile-jpg@2x.jpg 2x" width="280" height="180" alt="фото автора">
+                </picture>
+                <cite class="reviews__author-name"><strong>Левон</strong>(5 часов назад)</cite>
+                <p class="reviews__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="like__wrapper">
+                  <a class="like__button" href="#">
+                    <img class="reviews__author-like-image" src="img/icon-heart-svg.svg" width="13" height="12" alt="лайк">
+                  </a>
+                  <p class="reviews__author-like">Нравится: 356</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-block__wrapper">
+              <div class="reviews__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x 2x">
+                  <source type="image/webp" srcset="img/photo-2-mobile-jpg.webp 1x, img/photo-2-mobile-jpg@2x.webp 2x">
+
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="reviews__author-image" src="img/photo-2-mobile-jpg.jpg 1x, img/photo-2-mobile-jpg@2x.jpg 2x" width="280" height="180" alt="фото автора">
+                </picture>
+                <cite class="reviews__author-name"><strong>Антон</strong> (12 часов назад)</cite>
+                <p class="reviews__text">Соседи будут рады!</p>
+                <div class="like__wrapper">
+                  <a class="like__button" href="#">
+                    <img class="reviews__author-like-image" src="img/icon-heart-svg.svg" width="13" height="12" alt="лайк">
+                  </a>
+                  <p class="reviews__author-like">Нравится: 666</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-block__wrapper">
+              <div class="reviews__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-3-mobile-jpg.webp 1x, img/photo-3-mobile-jpg@2x.webp 2x">
+
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                  <img class="reviews__author-image" src="img/photo-3-mobile-jpg.jpg 1x, img/photo-3-mobile-jpg@2x.jpg" width="280" height="180" alt="фото автора">
+                </picture>
+                <cite class="reviews__author-name"><strong>Борис</strong> (20 часов назад)</cite>
+                <p class="reviews__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="like__wrapper">
+                  <a class="like__button" href="#">
+                    <img class="reviews__author-like-image" src="img/icon-heart-svg.svg" width="13" height="12" alt="лайк">
+                  </a>
+                  <p class="reviews__author-like">Нравится: 215</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-block__wrapper">
+              <div class="reviews__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x img/photo-fair-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x img/photo-fair-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-4-mobile-jpg.webp 1x, img/photo-4-mobile-jpg@2x.webp 2x">
+
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="reviews__author-image" src="img/photo-4-mobile-jpg.jpg 1x, img/photo-4-mobile-jpg@2x.jpg 2x" width="280" height="180" alt="фото автора">
+                </picture>
+                <cite class="reviews__author-name"><strong>Сергей</strong> (25 часов назад)</cite>
+                <p class="reviews__text">Самая кубанская в мире!</p>
+                <div class="like__wrapper">
+                  <a class="like__button" href="#">
+                    <img class="reviews__author-like-image" src="img/icon-heart-svg.svg" width="13" height="12" alt="лайк">
+                  </a>
+                  <p class="reviews__author-like">Нравится: 4</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-block__wrapper">
+              <div class="reviews__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-5-mobile-jpg.webp 1x, img/photo-5-mobile-jpg@2x.webp 2x">
+
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                  <img class="reviews__author-image" src="img/photo-5-mobile-jpg.jpg 1x, img/photo-5-mobile-jpg@2x.jpg 2x" width="280" height="180" alt="фото автора">
+                </picture>
+                <cite class="reviews__author-name"><strong>Максим</strong> (40 часов назад)</cite>
+                <p class="reviews__text">Где снег-то?</p>
+                <div class="like__wrapper">
+                  <a class="like__button" href="#">
+                    <img class="reviews__author-like-image" src="img/icon-heart-svg.svg" width="13" height="12" alt="лайк">
+                  </a>
+                  <p class="reviews__author-like">Нравится: 150</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-block__wrapper">
+              <div class="reviews__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-6-mobile-jpg.webp 1x, img/photo-6-mobile-jpg@2x.webp 2x">
+
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="reviews__author-image" src="img/photo-6-mobile-jpg.jpg 1x, img/photo-6-mobile-jpg@2x.jpg 2x" width="280" height="180" alt="фото автора">
+                </picture>
+                <cite class="reviews__author-name"><strong>Надежда</strong> (45 часов назад)</cite>
+                <p class="reviews__text">Всем GM и взаимные лайки!</p>
+                <div class="like__wrapper">
+                  <a class="like__button" href="#">
+                    <img class="reviews__author-like-image" src="img/icon-heart-svg.svg" width="13" height="12" alt="лайк">
+                  </a>
+                  <p class="reviews__author-like">Нравится: 2560</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="photo-editor">
+      <header class="photo-editor__header">
+        <p class="photo-editor__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+      </header>
+
+      <div class="photo-editor__form-wrapper photo-editor__content-wrapper">
+        <form class="photo-editor__form-main" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
+
+          <div class="photo-editor__form-photo">
+            <ul class="photo-editor__filters-buttons">
+              <li class="photo-editor__filters-item">
+                <svg class="photo-editor__icon-comb"><use xlink:href="#icon-copy"></use></svg>
               </li>
-              <li class = "site-list__item site-list__item--active">
-                <a href = "#">Фотографии</a>
+              <li class="photo-editor__filters-item">
+                <svg class="photo-editor__icon-comb"><use xlink:href="#icon-fill"></use></svg>
               </li>
-              <li class = "site-list__item">
-                <a href = "form.html">Конкурс</a>
-              </li>
-              <li class = "site-list__item">
-                <a href = "#">HTML Academy</a>
+              <li class="photo-editor__filters-item">
+                <svg class="photo-editor__icon-comb photo-editor__icon-contrast" ><use xlink:href="#icon-contrast"></use></svg>
               </li>
             </ul>
+            <ul class="photo-editor__form-filters">
+              <li class="photo-editor__filters-range"><div class="photo-editor__filters-border"></div></li>
+              <li class="photo-editor__filters-range--two photo-editor__filters-range--disable"><div class="photo-editor__filters-border--two"></div></li>
+              <li class="photo-editor__filters-range--tree photo-editor__filters-range--disable"><div class="photo-editor__filters-border--tree"></div></li>
+            </ul>
+            <div class="photo-editor__buttons">
+              <button class="photo-editor__button button button--rounded button--red" type="submit">Запостить</button>
+              <button class="photo-editor__button button button--rounded button--gray" type="reset">Отмена</button>
+            </div>
           </div>
-        </nav>
+        </form>
       </div>
-    </div>
-  </div>
-  <div class = "main-info__background">
-    <h1 class = "main-info__font-text">Фотографии пользователей</h1>
-  </div>
-  </div>
-</header>
+    </section>
+  </main>
 
-<main class = "main-photo">
-  <section class = "reviews">
-    <div class = "container">
-      <div class = "reviews__wrapper">
-        <h2 class = "reviews__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
-        <div class = "reviews-block__wrapper-main">
-          <img class = "reviews__photo-img" src = "img/panorama-desktop-jpg.jpg" width = "320" height = "180" alt = "фото автора">
-          <div class = "reviews__item-main">
-            <cite class = "reviews__author-name--main"><strong>Анна </strong>(3 часов назад)</cite>
-            <p class = "reviews__text reviews__text--active">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <div class = "like__wrapper-main">
-              <a class = "like__button--main" href = "#">
-                <img class = "reviews__author-like-image" src = "img/icon-heart-svg.svg" width = "13" height = "12" alt = "лайк">
-              </a>
-              <p class = "reviews__author-like--main">Нравится: 215</p>
-            </div>
-          </div>
-        </div>
-        <div class = "reviews-block__wrapper-blocks">
-          <div class = "reviews-block__wrapper">
-            <div class = "reviews__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-1-mobile-jpg.webp 1x, img/photo-1-mobile-jpg@2x.webp 2x">
-
-                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                <img class = "reviews__author-image" src = "img/photo-1-mobile-jpg.jpg 1x, img/photo-1-mobile-jpg@2x.jpg 2x" width = "280" height = "180" alt = "фото автора">
-              </picture>
-              <cite class = "reviews__author-name"><strong>Левон</strong>(5 часов назад)</cite>
-              <p class = "reviews__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <div class = "like__wrapper">
-                <a class = "like__button" href = "#">
-                  <img class = "reviews__author-like-image" src = "img/icon-heart-svg.svg" width = "13" height = "12" alt = "лайк">
-                </a>
-                <p class = "reviews__author-like">Нравится: 356</p>
-              </div>
-            </div>
-          </div>
-          <div class = "reviews-block__wrapper">
-            <div class = "reviews__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x 2x">
-                <source type="image/webp" srcset="img/photo-2-mobile-jpg.webp 1x, img/photo-2-mobile-jpg@2x.webp 2x">
-
-                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-                <img class = "reviews__author-image" src = "img/photo-2-mobile-jpg.jpg 1x, img/photo-2-mobile-jpg@2x.jpg 2x" width = "280" height = "180" alt = "фото автора">
-              </picture>
-              <cite class = "reviews__author-name"><strong>Антон</strong> (12 часов назад)</cite>
-              <p class = "reviews__text">Соседи будут рады!</p>
-              <div class = "like__wrapper">
-                <a class = "like__button" href = "#">
-                  <img class = "reviews__author-like-image" src = "img/icon-heart-svg.svg" width = "13" height = "12" alt = "лайк">
-                </a>
-                <p class = "reviews__author-like">Нравится: 666</p>
-              </div>
-            </div>
-          </div>
-          <div class = "reviews-block__wrapper">
-            <div class = "reviews__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-3-mobile-jpg.webp 1x, img/photo-3-mobile-jpg@2x.webp 2x">
-
-                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-                <img class = "reviews__author-image" src = "img/photo-3-mobile-jpg.jpg 1x, img/photo-3-mobile-jpg@2x.jpg" width = "280" height = "180" alt = "фото автора">
-              </picture>
-              <cite class = "reviews__author-name"><strong>Борис</strong> (20 часов назад)</cite>
-              <p class = "reviews__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <div class = "like__wrapper">
-                <a class = "like__button" href = "#">
-                  <img class = "reviews__author-like-image" src = "img/icon-heart-svg.svg" width = "13" height = "12" alt = "лайк">
-                </a>
-                <p class = "reviews__author-like">Нравится: 215</p>
-              </div>
-            </div>
-          </div>
-          <div class = "reviews-block__wrapper">
-            <div class = "reviews__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x img/photo-fair-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x img/photo-fair-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-4-mobile-jpg.webp 1x, img/photo-4-mobile-jpg@2x.webp 2x">
-
-                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x img/photo-fair-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x img/photo-fair-tablet@2x.jpg 2x">
-                <img class = "reviews__author-image" src = "img/photo-4-mobile-jpg.jpg 1x, img/photo-4-mobile-jpg@2x.jpg 2x" width = "280" height = "180" alt = "фото автора">
-              </picture>
-              <cite class = "reviews__author-name"><strong>Сергей</strong> (25 часов назад)</cite>
-              <p class = "reviews__text">Самая кубанская в мире!</p>
-              <div class = "like__wrapper">
-                <a class = "like__button" href = "#">
-                  <img class = "reviews__author-like-image" src = "img/icon-heart-svg.svg" width = "13" height = "12" alt = "лайк">
-                </a>
-                <p class = "reviews__author-like">Нравится: 4</p>
-              </div>
-            </div>
-          </div>
-          <div class = "reviews-block__wrapper">
-            <div class = "reviews__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-5-mobile-jpg.webp 1x, img/photo-5-mobile-jpg@2x.webp 2x">
-
-                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                <img class = "reviews__author-image" src = "img/photo-5-mobile-jpg.jpg 1x, img/photo-5-mobile-jpg@2x.jpg 2x" width = "280" height = "180" alt = "фото автора">
-              </picture>
-              <cite class = "reviews__author-name"><strong>Максим</strong> (40 часов назад)</cite>
-              <p class = "reviews__text">Где снег-то?</p>
-              <div class = "like__wrapper">
-                <a class = "like__button" href = "#">
-                  <img class = "reviews__author-like-image" src = "img/icon-heart-svg.svg" width = "13" height = "12" alt = "лайк">
-                </a>
-                <p class = "reviews__author-like">Нравится: 150</p>
-              </div>
-            </div>
-          </div>
-          <div class = "reviews-block__wrapper">
-            <div class = "reviews__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-6-mobile-jpg.webp 1x, img/photo-6-mobile-jpg@2x.webp 2x">
-
-                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-                <img class = "reviews__author-image" src = "img/photo-6-mobile-jpg.jpg 1x, img/photo-6-mobile-jpg@2x.jpg 2x" width = "280" height = "180" alt = "фото автора">
-              </picture>
-              <cite class = "reviews__author-name"><strong>Надежда</strong> (45 часов назад)</cite>
-              <p class = "reviews__text">Всем GM и взаимные лайки!</p>
-              <div class = "like__wrapper">
-                <a class = "like__button" href = "#">
-                  <img class = "reviews__author-like-image" src = "img/icon-heart-svg.svg" width = "13" height = "12" alt = "лайк">
-                </a>
-                <p class = "reviews__author-like">Нравится: 2560</p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <svg class="footer__footer-logo" width="147" height="40"><use xlink:href="#icon-footer-logo"></use></svg>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy"><img class="site-list__icon-comb" src="img/icon-twitter.svg" width="18" height="14" alt="твиттер"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><img class="site-list__icon-comb" src="img/icon-facebook.svg" width="9" height="19" alt="фейсбук"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"><img class="site-list__icon-comb" src="img/icon-youtube.svg" width="18" height="14" alt="ютюб"></a>
+          </li>
+        </ul>
       </div>
+      <p class="footer__copyright copyright">
+        <b class="footer__copyright-text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg class="site-list__icon-copyright" width="16" height="16"><use xlink:href="#icon-htmlacademy"></use></svg></a>
+      </p>
     </div>
-  </section>
-
-  <section class = "photo-editor">
-    <header class = "photo-editor__header">
-      <p class = "photo-editor__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
-    </header>
-
-    <div class = "photo-editor__form-wrapper content-wrapper">
-      <form class = "form-photo" action = "https://echo.htmlacademy.ru/" enctype = "multipart/form-data"
-            method = "post">
-
-        <div class = "form-photo__controls">
-          <ul class = "form-photo__filters-buttons">
-            <li class = "filters-buttons__items">
-              <svg class = "active-filter" xmlns = "http://www.w3.org/2000/svg" width = "48" height = "48" version = "1" viewBox = "0 0 48 48">
-                <path fill = "none" d = "M0 0h48v48H0V0z"/>
-                <path d = "M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"/>
-              </svg>
-            </li>
-            <li class = "filters-buttons__items">
-              <svg class = "filter-svg" xmlns = "http://www.w3.org/2000/svg" width = "48" height = "48" version = "1" viewBox = "0 0 48 48">
-                <path fill = "none" d = "M0 0h48v48H0V0z"/>
-                <path d = "M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 0 0 0-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z"/>
-              </svg>
-            </li>
-            <li class = "filters-buttons__items">
-              <svg class = "filter-svg" xmlns = "http://www.w3.org/2000/svg" width = "31.92" height = "31.92" version = "1" viewBox = "-35.422 -7.96 31.92 31.92">
-                <path d = "M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/>
-                <path d = "M-19.462 16.331a8.519 8.519 0 0 0 8.52-8.52 8.518 8.518 0 0 0-8.52-8.519"/>
-              </svg>
-            </li>
-          </ul>
-          <ul class = "form-photo__filters">
-            <li class = "filters-range"></li>
-            <div class = "disable-filters">
-              <li class = "filters-range-two disable"></li>
-              <li class = "filters-range-tree disable"></li>
-            </div>
-          </ul>
-        </div>
-
-        <div class = "form-photo__buttons">
-          <button class = "form-photo__button button button--rounded button--red" type = "submit">Запостить</button>
-          <button class = "form-photo__button button button--rounded button--gray" type = "reset">Отмена</button>
-        </div>
-      </form>
-    </div>
-  </section>
-</main>
-
-<footer class = "footer">
-  <div class = "footer__wrapper">
-    <img class = "footer__footer-logo" src = "img/logotype-blue-tablet-svg.svg" height = "146" width = "40" alt = "логотип футера">
-    <div class = "footer__social social">
-      <ul class = "social__list">
-        <li class = "social__item">
-          <a class = "social__link social__link--twitter" href = "https://vk.com/htmlacademy">Твитер</a>
-        </li>
-        <li class = "social__item">
-          <a class = "social__link social__link--facebook" href = "https://www.facebook.com/htmlacademy">Фейсбук</a>
-        </li>
-        <li class = "social__item">
-          <a class = "social__l  ink social__link--youtube" href = "https://www.instagram.com/htmlacademy">Ютюб</a>
-        </li>
-      </ul>
-    </div>
-    <p class = "footer__copyright copyright">
-      <b class = "footer__copyright-text">Разработано:</b>
-      <a class = "button copyright__link" href = "https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    </p>
-  </div>
-</footer>
+  </footer>
 </body>
+<script src="js/script.min.js"></script>
 </html>

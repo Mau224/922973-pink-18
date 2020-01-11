@@ -1,43 +1,62 @@
 .like__wrapper {
   display: flex;
-  align-items: baseline;
-  margin-left: 18px;
+  align-items: center;
   margin-top: auto;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  padding-left: 18px;
 }
 
 .like__button {
-  margin-right: 18px;
+  order: 2;
+  margin-right: 32px;
+  outline: none;
 }
 
 .like__wrapper-main {
   display: flex;
-  align-items: baseline;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 19px;
+  flex-direction: row-reverse;
+}
+
+.like__button--main {
+  margin-right: 32px;
+  order: 2;
 }
 
 @media (min-width: @tablet-width) {
   .like__wrapper-main {
+    width: 200px;
     display: flex;
     flex-direction: row-reverse;
     align-items: baseline;
-    order: 1;
+    justify-content: normal;
     margin-left: auto;
     margin-right: 20px;
+    margin-top: 5px;
   }
 
   .like__button {
-    margin-right: -20px;
-  }
+    order: 0;
+    padding-right: 32px;
+    margin-right: 0;
 
-  .like__button--main {
-    margin-right: 10px;
+    &--main {
+      margin-right: 15px;
+      order: 2;
+    }
   }
 
   .like__wrapper {
-    width: 245px;
     align-items: baseline;
     flex-wrap: nowrap;
     margin-left: 0;
     flex-direction: row-reverse;
+    padding-left: 28px;
+    justify-content: space-between;
   }
 }
 
@@ -47,6 +66,6 @@
     align-items: baseline;
     order: 1;
     margin-left: auto;
-    margin-right: 60px;
+    margin-right: 14px;
   }
 }
