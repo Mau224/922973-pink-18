@@ -12,7 +12,7 @@
 </head>
 <body>
 <header class="page-header page-header--active page-header--nomain">
-  <div class="page-header__wrapper--active">
+  <div class="page-header__wrapper page-header__wrapper--active">
     <div class="container__menu-background">
       <div class="container__back-desktop">
         <nav class="main-nav main-nav--closed">
@@ -20,15 +20,15 @@
             <div class="main-nav__logo">
               <a class="main-nav__header-link" href="index.html">
                 <picture>
-                  <source media="(min-width: 960px)" srcset="img/logotype-header-desktop-svg.svg">
+                  <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
                   <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet-pink.svg">
-                  <img class="main-nav__logo-image" src="img/logotype-white-mobile-svg.svg">
+                  <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="логотип">
                 </picture>
               </a>
             </div>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
-              <svg class="main-nav__toggle-img--first main-nav__toggle-img main-nav__toggle-img--opened" width="50" height="24"><use xlink:href="img/sprite.svg#icon-burger"></use></svg>
-              <svg class="main-nav__toggle-img--last main-nav__toggle-img main-nav__toggle-img--closed" width="24" height="23"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
+              <svg class="main-nav__toggle-img--first main-nav__toggle-img main-nav__toggle-img--opened" width="50" height="24"><use xlink:href="img/sprite.svg#icon-menu-burger"></use></svg>
+              <svg class="main-nav__toggle-img--last main-nav__toggle-img main-nav__toggle-img--closed" width="24" height="23"><use xlink:href="img/sprite.svg#icon-menu-cross"></use></svg>
             </button>
         </div>
           <div class="main-nav__wrapper">
@@ -184,7 +184,11 @@
 
   <footer class="footer">
     <div class="footer__wrapper">
-      <svg class="footer__footer-logo" width="147" height="40"><use xlink:href="img/sprite.svg#icon-footer-logo"></use></svg>
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+        <img class="footer__footer-logo" src="img/logo-pink-blue-mobile.svg" alt="логотип">
+      </picture>
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">

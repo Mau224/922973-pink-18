@@ -19,7 +19,12 @@
 
 .main-nav__info-background {
   padding-top: 20px;
-  background: url("../img/back-desktop-jpg.jpg") no-repeat 50%;
+  background: url("../img/bg-back-tablet@1x.jpg") no-repeat 100%;
+
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -42,8 +47,12 @@
 
   .main-nav__info-background {
     padding-top: 20px;
-    background: url("../img/back-desktop-jpg.jpg") no-repeat 50%;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50%;
     background-color: #283645;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 }
 
@@ -69,5 +78,10 @@
     padding-top: 20px;
     background-color: #283645;
     padding-bottom: 66px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50%;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }

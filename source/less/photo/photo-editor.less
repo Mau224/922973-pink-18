@@ -64,13 +64,17 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding-top: 400px;
-  background: url("../img/photo-7-mobile-jpg.jpg");
+  background: url("../img/photo-road-mobile@1x.jpg");
   background-position: top;
   background-position-y: 3%;
   background-position-x: 20px;
   background-size: 87%;
   background-repeat: no-repeat;
   padding-bottom: 26px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/photo-road-mobile@2x.jpg");
+  }
 }
 
 
@@ -229,12 +233,16 @@
     flex-wrap: wrap;
     padding-left: 350px;
     padding-top: 0;
-    background: url("../img/photo-7-mobile-jpg.jpg");
+    background: url("../img/photo-road-tablet@1x.jpg");
     background-position: center;
     background-position-y: 33%;
     background-position-x: 6%;
     background-size: 45%;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/photo-road-tablet@2x.jpg");
+    }
   }
 
   .photo-editor__filters-buttons {
@@ -438,13 +446,17 @@
   .photo-editor__form-photo {
     padding-top: 34px;
     padding-left: 400px;
-    background: url("../img/photo-7-mobile-jpg.jpg");
+    background: url("../img/photo-road-desktop@1x.jpg");
     background-position: center;
     background-position-y: 31%;
     background-position-x: 12%;
     background-size: 32%;
     background-repeat: no-repeat;
     padding-bottom: 19px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/photo-road-desktop@2x.jpg");
+    }
   }
 
   .photo-editor__button {
