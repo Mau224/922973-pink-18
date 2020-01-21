@@ -5,7 +5,7 @@ function initMap() {
     zoom: 16,
     disableDefaultUI: true,
   };
-  var map = new google.maps.Map(document.getElementById("map"), mapProp);
+  var map = new google.maps.Map(document.getElementById('map'), mapProp);
   var coordinates = {lat: 59.938624, lng: 30.323085};
   var image = 'img/map-marker-svg.svg';
   var marker = new google.maps.Marker({
@@ -15,9 +15,9 @@ function initMap() {
   });
   var noPoi = [
     {
-      featureType: "poi",
+      featureType: 'poi',
       stylers: [
-        { visibility: "off" }
+        { visibility: 'off' }
       ]
     }
   ];

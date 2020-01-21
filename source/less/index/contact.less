@@ -5,12 +5,12 @@
   overflow: hidden;
 }
 
-.contact-map__map {
+.contact__map-base {
   width: 100%;
   height: 200px;
 }
 
-.contact-text {
+.contact__text {
   width: 222px;
   font-weight: 300;
   font-style: normal;
@@ -19,15 +19,15 @@
   letter-spacing: normal;
   text-align: center;
   font-size: 24px;
-  margin: -6px auto 44px;
+  margin: -6px auto 22px;
 }
 
-.contact-map__wrapper {
+.contact__bottom-wrapper {
   width: 100%;
   position: relative;
 }
 
-.contact-map__marker {
+.contact__map-marker {
   width: 50px;
   position: relative;
   height: 50px;
@@ -37,24 +37,25 @@
   left: 150px;
 }
 
-.contact-map__inner {
+.contact__map-inner {
   width: 100%;
   margin: 0 auto;
+
 }
 
-//.contact-map__inner::before {
-//  content: "";
-//  margin-left: -170px;
-//  position: absolute;
-//  width: 0;
-//  height: 0;
-//  border-left: 179px solid transparent;
-//  border-right: 179px solid transparent;
-//  border-top: 57px solid white;
-//  z-index: 99;
-//}
+.contact__map-inner::before {
+  content: "";
+  margin-left: -170px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 179px solid transparent;
+  border-right: 179px solid transparent;
+  border-top: 57px solid white;
+  z-index: 99;
+}
 
-.contact-item a {
+.contact__item a {
   color: #d22856;
   list-style: none;
   text-decoration: none;
@@ -66,18 +67,19 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
+  margin-top: -39px;
 }
 
-.contact-list {
+.contact__list {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
+  justify-content: center;
   list-style: none;
-  padding-left: 40px;
   margin: 0 auto;
+  padding-left: 0;
 }
 
-.contact-item b {
+.contact__item b {
   color: black;
   font-size: 18px;
   font-weight: bold;
@@ -89,13 +91,9 @@
   list-style: none;
 }
 
-.contact-item {
+.contact__item {
   list-style: none;
   margin-bottom: 22px;
-}
-
-.contact-item:first-child {
-  margin-top: -13px;
 }
 
 .contact-map {
@@ -113,7 +111,7 @@
   color: rgba(40, 54, 69, 0.3);
 }
 
-.contact-map__inner::before {
+.contact__map-inner::before {
   top: -1px;
   margin-left: -50vw;
   position: absolute;
@@ -133,8 +131,28 @@
     margin-bottom: 30px;
   }
 
-  .contact-map__map {
+  .contact__map-base {
     height: 400px;
+  }
+
+  .contact__academy-link {
+    padding-left: 66px;
+  }
+
+  .contact__item:first-child {
+    margin-top: -14px;
+    margin-left: -48px;
+  }
+
+  .contact__text-header {
+    margin-left: 94px;
+    margin-top: 9px;
+
+    &--tree {
+      margin-top: 48px;
+      margin-left: 38px;
+      width: 200px;
+    }
   }
 
   .contact-wrapper {
@@ -144,11 +162,13 @@
     justify-content: center;
   }
 
-  .contact-map__wrapper {
+  .contact__bottom-wrapper {
     height: 306px;
+    margin-top: 21px;
+    margin-bottom: 30px;
   }
 
-  .contact-list {
+  .contact__list {
     width: 550px;
     display: flex;
     flex-direction: row;
@@ -158,7 +178,7 @@
     margin-bottom: 25px;
   }
 
-  .contact-text {
+  .contact__text {
     width: 400px;
     margin: 0 auto 69px;
     font-size: 40px;
@@ -166,7 +186,7 @@
     margin-bottom: 45px;
   }
 
-  .contact-item {
+  .contact__item {
     width: 50%;
     margin-bottom: 29px;
     margin-left: 0;
@@ -189,16 +209,21 @@
     text-align: center;
   }
 
-  .contact-map__map {
+  .contact__item:first-child {
+    margin-top: -14px;
+    margin-left: -5px;
+  }
+
+  .contact__map-base {
     height: 518px;
   }
 
-  .contact-item b {
+  .contact__item b {
     padding-left: 29px;
-    padding-top: 9px;
+    padding-top: 6px;
   }
 
-  .contact-list {
+  .contact__list {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -206,7 +231,7 @@
     margin: -5px auto 3px;
   }
 
-  .contact-text {
+  .contact__text {
     width: 500px;
     font-size: 50px;
     font-family: "OpenSans", "Arial", sans-serif;
@@ -216,7 +241,7 @@
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    margin: -14px auto 60px;
+    margin: -17px auto 60px;
   }
 
   .contact-map {
@@ -232,7 +257,7 @@
     flex-wrap: nowrap;
   }
 
-  .contact-item {
+  .contact__item {
     width: auto;
 
     &--two {
@@ -244,38 +269,60 @@
     }
   }
 
-  .contact-item a {
+  .contact__item a {
     padding-left: 18px;
   }
 
-  .contact-item a:last-child {
-    padding-top: 5px;
-    margin-top: -17px;
+  .contact__item a:last-child {
+    padding-top: 20px;
   }
 
-  //.contact-item {
+  //.contact__item {
   //  &--two {
   //    order: 1;
   //  }
   //}
   //
-  //.contact-item {
+  //.contact__item {
   //  &--one {
   //    order: 2;
   //  }
   //}
 
-  .contact-map__inner {
+  .contact__map-inner {
     height: auto;
   }
 
-  .contact-map__wrapper {
+  .contact__bottom-wrapper {
     height: 100%;
     margin-bottom: -32px;
   }
 
-  .contact-map__inner::before {
+  .contact__map-inner::before {
     content: "";
     border-top: 123px solid white;
+  }
+
+  .contact__text-header {
+    margin-left: 0;
+    margin-top: 0;
+
+    &--two {
+      margin-right: 8px;
+      margin-top: 5px;
+    }
+
+    &--tree {
+      margin-top: 5px;
+      margin-left: 15px;
+    }
+  }
+
+  .contact__academy-link {
+    padding-left: 0;
+  }
+
+  .contact__text-link {
+    margin-left: 19px;
   }
 }

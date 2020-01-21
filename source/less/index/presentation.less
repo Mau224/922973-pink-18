@@ -2,6 +2,8 @@
   position: relative;
   width: inherit;
   padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -9,14 +11,26 @@
   list-style: none;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 74px;
+  margin-top: 69px;
   padding-bottom: 323px;
   background-image: url("../img/iphone-screen-3-mobali.png");
   background-repeat: no-repeat;
   background-color: #ececec;
   background-position: center;
   background-position-y: calc(100% + 40px);
-  padding-left: 28px;
+  padding-left: 9px;
+}
+
+.presentation::before {
+  content: "";
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  background-color: #ececec;
+  transform: skewY(-3.5deg);
+  z-index: 0;
+  margin-top: -37px;
+  left: 0;
 }
 
 .presentation__item {
@@ -64,6 +78,16 @@
     margin-right: auto;
     position: relative;
     background-color: white;
+    width: 630px;
+  }
+
+  .presentation {
+    margin: 0 auto;
+  }
+
+  .presentation::before {
+    display: none;
+    background: none;
   }
 
   .presentation__clock-text {
@@ -76,6 +100,13 @@
     line-height: 1.71;
     letter-spacing: normal;
     text-align: left;
+    color: #283645;
+    margin-top: 11px;
+    margin-bottom: 12px;
+  }
+
+  .presentation__clock-center {
+    padding-left: 10px;
   }
 
   .presentation__clock-background-wrraper {
@@ -120,7 +151,7 @@
   .presentation__clock-text-wrraper {
     display: flex;
     flex-direction: column;
-    margin-left: 331px;
+    margin-left: 315px;
     width: 295px;
     font-size: 14px;
     font-weight: normal;
@@ -129,7 +160,7 @@
     line-height: 1.71;
     letter-spacing: normal;
     text-align: left;
-    margin-top: 96px;
+    margin-top: 92px;
   }
 
   .presentation__clock-link {
@@ -151,8 +182,8 @@
     background-color: transparent;
     background-position: top left;
     background-position-y: 41px;
-    background-position-x: 45px;
-    padding: 74px 30px 55px 356px;
+    background-position-x: 8px;
+    padding: 71px 29px 55px 316px;
     margin: 5px auto 0;
   }
 
@@ -160,11 +191,11 @@
     padding-right: 10px;
   }
 
-  .presentation__headline {
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 50px;
-  }
+  //.presentation__headline {
+  //  margin-left: auto;
+  //  margin-right: auto;
+  //  padding-right: 48px;
+  //}
 
   .presentation__clock-headline {
     width: 170px;
@@ -184,6 +215,20 @@
     line-height: 1.71;
     letter-spacing: normal;
     text-align: left;
+    padding-bottom: 3px;
+    padding-left: 3px;
+
+    &--padding {
+      margin-left: 20px;
+    }
+
+    &--center {
+      width: 321px;
+    }
+  }
+
+  .presentation__text-center {
+    padding-left: 60px;
   }
 
   .presentation__item {
@@ -214,13 +259,36 @@
     padding-bottom: 15px;
   }
 
+  .presentation__text-center {
+    padding-left: 0;
+  }
+
+  .presentation {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .presentation::before {
+    content: "";
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+    height: 670px;
+    position: absolute;
+    background-color: #ececec;
+    transform: skewY(-4.5deg);
+    z-index: 0;
+  }
+
   .presentation__clock-span {
     padding-right: 0;
   }
 
   .presentation__item {
-    margin-right: 5px;
-    margin-left: 17px;
+    //margin-right: 5px;
+    //margin-left: 17px;
+    margin-top: -1px;
+    width: 300px;
   }
 
   .presentation__headline {
@@ -230,11 +298,15 @@
     padding-left: 28px;
     margin-top: 38px;
     line-height: 30px;
+
+    &--first {
+      padding-left: 38px;
+    }
   }
 
   .presentation__photo {
     display: block;
-    margin-bottom: 54px;
+    margin-bottom: 61px;
   }
 
   .presentation__clock-photo {
@@ -280,7 +352,7 @@
   }
 
   .presentation__clock-wrapper {
-    width: 960px;
+    width: 940px;
     flex-direction: row;
     background: #ececec;
     position: relative;
@@ -327,6 +399,7 @@
     font-style: normal;
     line-height: 1.67;
     width: 528px;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
+    margin-top: 18px;
   }
 }

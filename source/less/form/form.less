@@ -1,19 +1,25 @@
-.page-inner__title-wrapper {
-  padding-top: 45px;
-  padding-bottom: 34px;
-  text-align: center;
-}
+//.page-inner__title-wrapper {
+//  padding-top: 45px;
+//  padding-bottom: 34px;
+//  text-align: center;
+//}
 
-.form__page-inner {
+.form {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
 
-.form__page-inner__title {
+
+.form__title-span {
+  &--mobile-hidden {
+    display: none;
+  }
+}
+
+.form__title {
   width: 273px;
   height: 75px;
-  margin: 0 auto;
   font-size: 14px;
   font-weight: 400;
   font-stretch: normal;
@@ -21,15 +27,14 @@
   line-height: 2.14;
   letter-spacing: normal;
   text-align: center;
-  margin-top: 44px;
-  margin-bottom: 34px;
+  margin: 44px auto 29px;
 
   &--mobile-hidden {
     display: none;
   }
 }
 
-.form__page-inner__form-feedback {
+.form__form-feedback {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -56,20 +61,21 @@
   color: #d22856;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .form-feedback__legend {
   margin: 0;
-  padding: 0;
   width: 255px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 18px;
+  line-height: 1.29;
   letter-spacing: normal;
   text-align: center;
+  color: #d22856;
+  padding: 20px 0 8px;
 }
 
 @media (min-width: @tablet-width) {
@@ -84,7 +90,7 @@
     margin: 0 auto;
   }
 
-  .form__page-inner__title {
+  .form__title {
     width: 490px;
     line-height: 30px;
     font-size: 18px;
@@ -97,10 +103,16 @@
     }
   }
 
-  .form-feedback__legend-text {
-    padding-right: 25px;
-    padding-left: 25px;
+  .form__title-span {
+    &--mobile-hidden {
+      display: block;
+    }
   }
+
+  //.form-feedback__legend-text {
+  //  padding-right: 25px;
+  //  padding-left: 25px;
+  //}
 }
 
 @media (min-width: @desktop-width) {
@@ -108,19 +120,18 @@
     margin: 0 auto;
   }
 
-  .form__page-inner__title {
+  .form__title {
     width: 770px;
     text-align: center;
     margin-bottom: 10px;
   }
 
-  .form-feedback__legend-text {
-    padding-right: 25px;
-    padding-left: 25px;
-    font-size: 14px;
-  }
+  //.form-feedback__legend-text {
+  //  padding-right: 25px;
+  //  padding-left: 25px;
+  //}
 
-  .form__page-inner__form-feedback {
+  .form__form-feedback {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
