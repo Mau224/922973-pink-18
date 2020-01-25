@@ -11,20 +11,20 @@
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
-<header class="page-header page-header--active page-header--nomain">
-  <div class="page-header__wrapper page-header__wrapper--active">
+<header class="page-header page-header--active">
+  <div class="page-header__wrapper--active">
     <div class="container__menu-background">
       <div class="container__back-desktop">
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper-logo">
             <div class="main-nav__logo">
-              <a class="main-nav__header-link" href="index.html">
+              <div class="main-nav__header-link">
                 <picture>
                   <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
                   <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet-pink.svg">
                   <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="логотип">
                 </picture>
-              </a>
+              </div>
             </div>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
               <svg class="main-nav__toggle-img--first main-nav__toggle-img main-nav__toggle-img--opened" width="50" height="24"><use xlink:href="img/sprite.svg#icon-menu-burger"></use></svg>
@@ -37,7 +37,7 @@
                 <a href="index.html">Главная</a>
               </li>
               <li class="site-list__item site-list__item--active">
-                <a href="#">Фотографии</a>
+                <a href="photo.html">Фотографии</a>
               </li>
               <li class="site-list__item">
                 <a href="form.html">Конкурс</a>
@@ -50,14 +50,14 @@
         </nav>
       </div>
     </div>
-  </div>
-  <div class="main-nav__info-background">
-    <h1 class="main-nav__info-headline">Фотографии пользователей</h1>
+    <div class="main-nav__info-background">
+      <h1 class="main-nav__info-headline">Фотографии пользователей</h1>
+    </div>
   </div>
 </header>
 
 
-  <main class="main-photo">
+  <main class="page-main__photo">
     <section class="reviews">
       <div class="reviews__wrapper">
           <h2 class="reviews__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
@@ -290,5 +290,6 @@
   </footer>
   <script src="js/script.min.js"></script>
   <script src="js/svgxuse.min.js" defer></script>
+  <script src="js/picturefill.min.js"></script>
 </body>
 </html>

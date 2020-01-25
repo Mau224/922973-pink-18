@@ -63,7 +63,7 @@
 
           <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
           <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
-          <img class="application-navigation__font-photo" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png" alt="рука с телефоном">
+          <img class="application-navigation__font-photo" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png" width="300" height="314" alt="рука с телефоном">
         </picture>
       </div>
       <div class="application-navigation__link-wrapper">
@@ -82,8 +82,8 @@
   </header>
 
   <main class="page-main">
-    <p class="page-main__headline headline-first">Устали от серости мегаполиса?</p>
-    <p class="page-main__headline headline-second">Нам есть, что вам предложить!</p>
+    <p class="page-main__headline page-main__headline-first">Устали от серости мегаполиса?</p>
+    <p class="page-main__headline page-main__headline-second">Нам есть, что вам предложить!</p>
     <section class="presentation">
       <div class="container__presentation">
         <ul class="presentation__list">
@@ -150,12 +150,12 @@
       <a class="slider__slide-control" href="#" data-slider__slide="1"></a>
       <a class="slider__slide-control" href="#" data-slider__slide="2"></a>
     </div>
-    <div class="control__desktop">
-      <a class="control__desktop-slider__slide" href="#" data-slider__slide="0">
-        <img class="control__desktop-slider__slide--left" src="img/left-arrow-svg.svg" width="22" height="41" alt="левая стрелка">
+    <div class="slider control__desktop">
+      <a class="control__desktop-slide" href="#" data-slider__slide="0">
+        <img class="control__desktop-slide--left" src="img/left-arrow-svg.svg" width="22" height="41" alt="левая стрелка">
       </a>
-      <a class="control__desktop-slider__slide" href="#" data-slider__slide="1">
-        <img class="control__desktop-slider__slide--right" src="img/right-arrow-svg.svg" width="22" height="41" alt="правая стрелка">
+      <a class="control__desktop-slide" href="#" data-slider__slide="1">
+        <img class="control__desktop-slide--right" src="img/right-arrow-svg.svg" width="22" height="41" alt="правая стрелка">
       </a>
     </div>
   </section>
@@ -164,17 +164,17 @@
     <div id="tablet__main-section">
       <div class="tablet__wrapper">
         <div class="tablet__slider">
-          <table class="tablet__slider tablet-slider__static">
+          <table class="tablet__slider tablet__slider-static">
             <tr class="tablet__header">
-              <th class="tablet__cell tablet-cell__disable"></th>
+              <th class="tablet__cell tablet__cell-disable"></th>
               <th class="tablet__cell tablet__header">
-                <p class="tablet__text tablet__text--main">База <br><span class="tablet-price">1,99 USD</span></p>
+                <p class="tablet__text tablet__text--main">База <br><span class="tablet__price">1,99 USD</span></p>
               </th>
               <th>
-                <p class="tablet__text tablet__text--main tablet-hit">Стандарт <br><span class="tablet-price">3,99 USD</span></p>
+                <p class="tablet__text tablet__text--main tablet__hit">Стандарт <br><span class="tablet__price">3,99 USD</span></p>
               </th>
               <th class="tablet__cell tablet__header">
-                <p class="tablet__text tablet__text--main">Анлим <br><span class="tablet-price">9,99 USD</span></p>
+                <p class="tablet__text tablet__text--main">Анлим <br><span class="tablet__price">9,99 USD</span></p>
               </th>
             </tr>
             <tr class="tablet__row">
@@ -183,7 +183,7 @@
               </td>
               <td class="tablet__element tablet__element--active"></td>
               <td class="tablet__element tablet__element--active">
-                <p class="tablet__text tablet-text__filters tablet__text--disabled">Розовый фильтр</p>
+                <p class="tablet__text tablet__text-filters tablet__text--disabled">Розовый фильтр</p>
               </td>
               <td class="tablet__element tablet__element--active"></td>
             </tr>
@@ -193,7 +193,7 @@
               </td>
               <td class="tablet__element tablet__element--disabled"></td>
               <td class="tablet__element tablet__element--active">
-                <p class="tablet__text tablet-text__filters tablet__text--disabled">Смайлики</p>
+                <p class="tablet__text tablet__text-filters tablet__text--disabled">Смайлики</p>
               </td>
               <td class="tablet__element tablet__element--active"></td>
             </tr>
@@ -203,7 +203,7 @@
               </td>
               <td class="tablet__element tablet__element--disabled"></td>
               <td class="tablet__element tablet__element--disabled">
-                <p class="tablet__text tablet-text__filters tablet__text--disabled">Комментарии</p>
+                <p class="tablet__text tablet__text-filters tablet__text--disabled">Комментарии</p>
               </td>
               <td class="tablet__element tablet__element--active"></td>
             </tr>
@@ -211,9 +211,9 @@
         </div>
         <div class="tablet__controls-wrapper">
           <div class="tablet__controls">
-            <a class="tablet__controls-slider__slide" href="#" data-slider__slide="0"></a>
-            <a class="tablet__controls-slider__slide tablet__controls-slider__slide--active" href="#" data-slider__slide="1"></a>
-            <a class="tablet__controls-slider__slide" href="#" data-slider__slide="2"></a>
+            <a class="tablet__controls-slide" href="#" data-slider__slide="0"></a>
+            <a class="tablet__controls-slide tablet__controls-slide--active" href="#" data-slider__slide="1"></a>
+            <a class="tablet__controls-slide" href="#" data-slider__slide="2"></a>
           </div>
         </div>
       </div>
@@ -247,7 +247,7 @@
   </section>
 
   <footer class="footer footer__disable">
-    <div class="footer__wrapper">
+    <div class="footer__wrapper footer__wrapper--index">
       <picture>
         <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
         <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
@@ -274,6 +274,7 @@
   </footer>
 <script src="js/script.min.js"></script>
 <script src="js/map.min.js"></script>
+<script src="js/picturefill.min.js"></script>
 <script src="js/svgxuse.min.js" defer></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEe6gK3a-MKyU_yLz_piioAJlIx08VK2E&callback=initMap"></script>
 </body>

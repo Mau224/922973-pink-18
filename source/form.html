@@ -11,11 +11,11 @@
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
-<header class="page-header page-header--active page-header--nomain">
-  <div class="page-header__wrapper page-header__wrapper--active">
+<header class="page-header page-header--active">
+  <div class="page-header__wrapper--active">
     <div class="container__menu-background">
       <div class="container__back-desktop">
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper-logo">
             <div class="main-nav__logo">
               <a class="main-nav__header-link" href="index.html">
@@ -59,8 +59,7 @@
 
   <main class="form">
     <div class="form__wrapper">
-      <p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-      <span class="form__title-span form__title-span--mobile-hidden">Пожалуйста, заполните форму ниже:</span></p>
+      <p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="form__title-span"> Пожалуйста, заполните форму ниже:</span></p>
     </div>
 
   <div class="container">
@@ -93,27 +92,27 @@
           <ul class="form-feedback__list-message form-message__list form-feedback__list--row">
             <li class="form-feedback__achivments-item">
               <input class="form-feedback__message-checkbox visually-hidden" type="checkbox" id="shark" name="achivments" value="shark" checked="">
-              <label class="form-feedback__label-checkbox" for="shark"><span class="feedback-message__label-wrapper"> Сделал селфи с акулой</span></label>
+              <label class="form-feedback__label-checkbox" for="shark"><span class="form-feedback__label-wrapper"> Сделал селфи с акулой</span></label>
             </li>
             <li class="form-feedback__achivments-item form-feedback__label-checkbox--beach">
               <input class="form-feedback__message-checkbox visually-hidden" type="checkbox" id="beach" name="achivments" value="beach" checked="">
-              <label class="form-feedback__label-checkbox" for="beach"><span class="feedback-message__label-wrapper"> Обгорел на пляже</span></label>
+              <label class="form-feedback__label-checkbox" for="beach"><span class="form-feedback__label-wrapper"> Обгорел на пляже</span></label>
             </li>
             <li class="form-feedback__achivments-item form-feedback__label-checkbox--chuck">
               <input class="form-feedback__message-checkbox visually-hidden" type="checkbox" id="chuck" name="achivments" value="chuck">
-              <label class="form-feedback__label-checkbox" for="chuck"><span class="feedback-message__label-wrapper"> Видел Чака Норриса</span></label>
+              <label class="form-feedback__label-checkbox" for="chuck"><span class="form-feedback__label-wrapper"> Видел Чака Норриса</span></label>
             </li>
             <li class="form-feedback__achivments-item form-feedback__label-checkbox--souvenirs">
               <input class="form-feedback__message-checkbox visually-hidden" type="checkbox" id="souvenirs" name="achivments" value="souvenirs">
-              <label class="form-feedback__label-checkbox " for="souvenirs"><span class="feedback-message__label-wrapper"> Накупил сувениров</span></label>
+              <label class="form-feedback__label-checkbox " for="souvenirs"><span class="form-feedback__label-wrapper"> Накупил сувениров</span></label>
             </li>
             <li class="form-feedback__achivments-item form-feedback__label-checkbox--tower">
               <input class="form-feedback__message-checkbox visually-hidden" type="checkbox" id="tower" name="achivments" value="tower" checked="">
-              <label class="form-feedback__label-checkbox" for="tower"><span class="feedback-message__label-wrapper"> Удержал башню</span></label>
+              <label class="form-feedback__label-checkbox" for="tower"><span class="form-feedback__label-wrapper"> Удержал башню</span></label>
             </li>
             <li class="form-feedback__achivments-item form-feedback__label-checkbox--hotel">
               <input class="form-feedback__message-checkbox visually-hidden" type="checkbox" id="hotel" name="achivments" value="hotel">
-              <label class="form-feedback__label-checkbox" for="hotel"><span class="feedback-message__label-wrapper"> Разгромил отель</span></label>
+              <label class="form-feedback__label-checkbox" for="hotel"><span class="form-feedback__label-wrapper"> Разгромил отель</span></label>
             </li>
           </ul>
         </fieldset>
@@ -139,22 +138,22 @@
 
       <div class="form-feedback__label-radio-wrapper">
         <fieldset class="form-feedback__fieldset form-feedback__fieldset--radio">
-          <legend class="form-feedback__legend">
+          <legend class="form-feedback__legend form-feedback__legend--desktop">
             <span class="form-feedback__legend-text">С каким приложением путешествовали?</span>
           </legend>
 
           <ul class="form-feedback__list">
             <li class="form-feedback__label-radio-item">
               <input class="form-feedback__label-radio visually-hidden" type="radio" id="ios" name="radio" value="1" checked="">
-              <label class="form-feedback__label-radio" for="ios"><span class="label-radio__wrapper">Pink для iOS</span></label>
+              <label class="form-feedback__label-radio" for="ios"><span class="form-feedback__label-span">Pink для iOS</span></label>
             </li>
             <li class="form-feedback__label-radio-item">
               <input class="form-feedback__label-radio visually-hidden" type="radio" id="android" name="radio" value="2">
-              <label class="form-feedback__label-radio" for="android"><span class="label-radio__wrapper">Pink на Android</span></label>
+              <label class="form-feedback__label-radio" for="android"><span class="form-feedback__label-span">Pink на Android</span></label>
             </li>
             <li class="form-feedback__label-radio-item">
               <input class="form-feedback__label-radio visually-hidden" type="radio" id="windows" name="radio" value="3">
-              <label class="form-feedback__label-radio" for="windows"><span class="label-radio__wrapper">Windows Phone</span></label>
+              <label class="form-feedback__label-radio" for="windows"><span class="form-feedback__label-span">Windows Phone</span></label>
             </li>
           </ul>
         </fieldset>
@@ -172,18 +171,18 @@
         </fieldset>
       </div>
 
-      <div class="form-feedback__submit-wrapper">
-        <button class="form-feedback__button" type="submit">Отправить форму</button>
+      <div class="form-submit__wrapper">
+        <button class="form-submit__button" type="submit">Отправить форму</button>
 
-        <p class="form-feedback__notification"><span class="form-feedback__asterix">*</span>—
-          обязательные<span class="form-feedback__notification-aux"> для заполнения</span> поля</p>
+        <p class="form-submit__notification"><span class="form-submit__asterix">*</span>—
+          обязательные<span class="form-submit__notification-aux"> для заполнения</span> поля</p>
       </div>
     </form>
   </div>
   </main>
 
   <footer class="footer">
-    <div class="footer__wrapper">
+    <div class="footer__wrapper footer__wrapper--form">
       <picture>
         <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
         <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
@@ -232,6 +231,7 @@
   </div>
   </div>
   <script src="js/script.min.js"></script>
-<script src="js/svgxuse.min.js" defer></script>
+  <script src="js/svgxuse.min.js" defer></script>
+  <script src="js/picturefill.min.js"></script>
 </body>
 </html>

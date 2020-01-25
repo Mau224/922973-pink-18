@@ -114,10 +114,10 @@ a {
   margin-right: auto;
   margin-bottom: 4px;
 }
-.headline-first {
+.page-main__headline-first {
   margin-top: 45px;
 }
-.headline-second {
+.page-main__headline-second {
   margin-top: 32px;
 }
 .page-main__presentation::before {
@@ -143,12 +143,12 @@ a {
   .page-main__presentation::before {
     background: none;
   }
-  .headline-first {
+  .page-main__headline-first {
     margin-top: 53px;
     width: 600px;
     margin-bottom: auto;
   }
-  .headline-second {
+  .page-main__headline-second {
     margin-top: auto;
     width: 579px;
   }
@@ -183,12 +183,12 @@ a {
             transform: skewY(-4.5deg);
     z-index: 0;
   }
-  .headline-first {
+  .page-main__headline-first {
     width: 750px;
     margin-bottom: auto;
     margin-top: 74px;
   }
-  .headline-second {
+  .page-main__headline-second {
     margin-top: auto;
     width: 579px;
   }
@@ -785,7 +785,7 @@ a {
     margin-left: 8px;
     background-color: #ececec;
   }
-  .main-photo {
+  .page-main__photo {
     left: -10px;
   }
   .reviews__photo-img {
@@ -1977,12 +1977,12 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.tablet-cell__disable {
+.tablet__cell-disable {
   border: 2px solid #ececec;
   background: #ececec;
   border-bottom: 2px outset rgba(255, 255, 255, 0.3);
 }
-.tablet-slider__static {
+.tablet__slider-static {
   border-collapse: collapse;
   -webkit-transform: translateX(-533px);
           transform: translateX(-533px);
@@ -2034,12 +2034,12 @@ a {
   text-align: left;
   text-transform: uppercase;
 }
-.tablet-cross {
+.tablet__cross {
   width: 20px;
   height: 20px;
   margin-top: 5px;
 }
-.tablet-on {
+.tablet__on {
   margin-top: 5px;
 }
 .slider__controls-tablet {
@@ -2060,7 +2060,7 @@ a {
   background-position-y: 11px;
   background-position-x: 226px;
 }
-.tablet-hit::before {
+.tablet__hit::before {
   content: "";
   width: 61px;
   height: 61px;
@@ -2069,7 +2069,7 @@ a {
   position: absolute;
   background: url("../img/hit-ribbon.png");
 }
-.tablet-hit::after {
+.tablet__hit::after {
   content: "хит";
   width: 111px;
   height: 61px;
@@ -2083,7 +2083,7 @@ a {
   margin-top: 7px;
   position: absolute;
 }
-.tablet-price {
+.tablet__price {
   font-size: 24px;
   font-weight: 300;
   font-style: normal;
@@ -2128,7 +2128,7 @@ a {
     width: 600px;
     text-align: right;
   }
-  .tablet-slider__static {
+  .tablet__slider-static {
     border-collapse: collapse;
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -2145,7 +2145,7 @@ a {
     padding: 0;
     width: 106px;
   }
-  .tablet-hit::before {
+  .tablet__hit::before {
     content: "";
     width: 61px;
     height: 61px;
@@ -2154,7 +2154,7 @@ a {
     position: absolute;
     background: url("../img/hit-ribbon.png");
   }
-  .tablet-hit::after {
+  .tablet__hit::after {
     content: "хит";
     width: 111px;
     height: 61px;
@@ -2193,7 +2193,7 @@ a {
     text-align: center;
     text-transform: uppercase;
   }
-  .tablet-price {
+  .tablet__price {
     font-size: 18px;
     text-align: center;
     font-weight: 300;
@@ -2258,7 +2258,7 @@ a {
   .tablet__text--disabled {
     display: none;
   }
-  .tablet-text__filters {
+  .tablet__text-filters {
     padding-left: 20px;
   }
   .tablet__text {
@@ -2281,13 +2281,13 @@ a {
     letter-spacing: normal;
     text-align: center;
   }
-  .tablet-price {
+  .tablet__price {
     font-size: 24px;
     text-align: center;
     font-weight: normal;
     line-height: 1.25;
   }
-  .tablet-hit::before {
+  .tablet__hit::before {
     content: "";
     width: 60px;
     height: 61px;
@@ -2296,7 +2296,7 @@ a {
     position: absolute;
     background: url("../img/hit-ribbon.png");
   }
-  .tablet-hit::after {
+  .tablet__hit::after {
     content: "хит";
     width: 111px;
     height: 61px;
@@ -3214,7 +3214,7 @@ a {
   }
 }
 @media (min-width: 960px) {
-  .form-feedback__submit-wrapper {
+  .form-submit__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3228,7 +3228,7 @@ a {
         -ms-flex-order: 5;
             order: 5;
   }
-  .form-feedback__notification {
+  .form-submit__notification {
     margin-top: 40px;
   }
   .form-feedback__textarea {
@@ -3243,11 +3243,11 @@ a {
     padding-bottom: 30px;
   }
 }
-.form-feedback__submit-wrapper {
+.form-submit__wrapper {
   width: 320px;
   margin: 0 auto;
 }
-.form-feedback__button {
+.form-submit__button {
   width: 276px;
   height: 60px;
   color: white;
@@ -3264,25 +3264,25 @@ a {
   border-radius: 2px;
   margin-top: 56px;
 }
-.form-feedback__notification-aux {
+.form-submit__notification-aux {
   display: none;
 }
-.form-feedback__asterix {
+.form-submit__asterix {
   color: #d22856;
 }
-.form-feedback__notification {
+.form-submit__notification {
   margin: 0 auto;
   margin-top: 20px;
   margin-left: 46px;
 }
-.form-feedback__button:hover {
+.form-submit__button:hover {
   background-color: #1c9b5e;
 }
-.form-feedback__button:active {
+.form-submit__button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 @media (min-width: 660px) {
-  .form-feedback__submit-wrapper {
+  .form-submit__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3297,18 +3297,18 @@ a {
         -ms-flex-order: 5;
             order: 5;
   }
-  .form-feedback__notification {
+  .form-submit__notification {
     margin-top: 40px;
     font-size: 16px;
   }
-  .form-feedback__button {
+  .form-submit__button {
     width: 296px;
     margin-top: 56px;
     margin-left: 9px;
   }
 }
 @media (min-width: 960px) {
-  .form-feedback__submit-wrapper {
+  .form-submit__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3323,12 +3323,12 @@ a {
         -ms-flex-order: 5;
             order: 5;
   }
-  .form-feedback__notification-aux {
+  .form-submit__notification-aux {
     display: block;
     margin-left: 3px;
     margin-right: 3px;
   }
-  .form-feedback__notification {
+  .form-submit__notification {
     width: 312px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3336,7 +3336,7 @@ a {
     margin-top: 87px;
     margin-left: 250px;
   }
-  .form-feedback__button {
+  .form-submit__button {
     width: 296px;
     margin-top: 83px;
     margin-left: 19px;
