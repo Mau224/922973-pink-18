@@ -14,14 +14,14 @@
 </head>
 
 <body>
-<header class="page-header page-header--active">
-    <div class="page-header__wrapper">
-      <div class="container__menu-background">
-      <div class="container__back-desktop">
+<header class="page-header">
+  <div class="page-header__wrapper">
+    <div class="page-header__menu-background">
+      <div class="page-header__back-desktop">
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper-logo">
             <div class="main-nav__logo">
-              <div class="main-nav__header-link">
+              <div class="main-nav__header-link--index">
                 <picture>
                   <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
                   <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet-pink.svg">
@@ -30,10 +30,10 @@
               </div>
             </div>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
-              <svg class="main-nav__toggle-img--first main-nav__toggle-img main-nav__toggle-img--opened" width="50" height="24"><use xlink:href="img/sprite.svg#icon-menu-burger"></use></svg>
-              <svg class="main-nav__toggle-img--last main-nav__toggle-img main-nav__toggle-img--closed" width="24" height="23"><use xlink:href="img/sprite.svg#icon-menu-cross"></use></svg>
+              <svg class="main-nav__toggle-img main-nav__toggle-img--first main-nav__toggle-img main-nav__toggle-img--opened" width="50" height="24"><use xlink:href="img/sprite.svg#icon-menu-burger"></use></svg>
+              <svg class="main-nav__toggle-img main-nav__toggle-img--last main-nav__toggle-img main-nav__toggle-img--closed" width="24" height="23"><use xlink:href="img/sprite.svg#icon-menu-cross"></use></svg>
             </button>
-        </div>
+          </div>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
@@ -63,12 +63,12 @@
 
           <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
           <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
-          <img class="application-navigation__font-photo" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png" width="300" height="314" alt="рука с телефоном">
+          <img class="application-navigation__font-photo" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png" width="260" height="290" alt="рука с телефоном">
         </picture>
       </div>
       <div class="application-navigation__link-wrapper">
         <div class="application-navigation__font-container">
-        <a href="#" class="application-navigation__link">Скачать приложение</a>
+        <a href="https://www.apple.com/ios/app-store/" class="application-navigation__link">Скачать приложение</a>
         <div class="application-navigation__wrapper">
           <a href="https://www.apple.com/ios/app-store/"><img class="application-navigation__link-img" src="img/apple-logo-svg.svg" width="47" height="56" alt="apple"></a>
           <a href="https://play.google.com/store/apps/details?id=com.google.android.finsky&hl=ru"><img class="application-navigation__link-img" src="img/android-logo-svg.svg" width="43" height="47" alt="android"></a>
@@ -85,7 +85,7 @@
     <p class="page-main__headline page-main__headline-first">Устали от серости мегаполиса?</p>
     <p class="page-main__headline page-main__headline-second">Нам есть, что вам предложить!</p>
     <section class="presentation">
-      <div class="container__presentation">
+      <div class="presentation container__presentation">
         <ul class="presentation__list">
           <li class="presentation__item">
             <picture>
@@ -146,19 +146,20 @@
       </div>
     </div>
     <div class="slider__controls">
-      <a class="slider__slide-control active" href="#" data-slider__slide="0"></a>
-      <a class="slider__slide-control" href="#" data-slider__slide="1"></a>
-      <a class="slider__slide-control" href="#" data-slider__slide="2"></a>
+      <button class="slider__slide-control active" data-slider__slide="0"></button>
+      <button class="slider__slide-control" data-slider__slide="1"></button>
+      <button class="slider__slide-control" data-slider__slide="2"></button>
     </div>
     <div class="slider control__desktop">
-      <a class="control__desktop-slide" href="#" data-slider__slide="0">
+      <button class="control__desktop-slide" data-slider__slide="0">
         <img class="control__desktop-slide--left" src="img/left-arrow-svg.svg" width="22" height="41" alt="левая стрелка">
-      </a>
-      <a class="control__desktop-slide" href="#" data-slider__slide="1">
+      </button>
+      <button class="control__desktop-slide" data-slider__slide="1">
         <img class="control__desktop-slide--right" src="img/right-arrow-svg.svg" width="22" height="41" alt="правая стрелка">
-      </a>
+      </button>
     </div>
   </section>
+
 <div class="tablet__mobaile-container">
   <section class="tablet__static">
     <div id="tablet__main-section">
@@ -211,9 +212,9 @@
         </div>
         <div class="tablet__controls-wrapper">
           <div class="tablet__controls">
-            <a class="tablet__controls-slide" href="#" data-slider__slide="0"></a>
-            <a class="tablet__controls-slide tablet__controls-slide--active" href="#" data-slider__slide="1"></a>
-            <a class="tablet__controls-slide" href="#" data-slider__slide="2"></a>
+            <button class="tablet__controls-slide" data-slider__slide="0"></button>
+            <button class="tablet__controls-slide tablet__controls-slide--active" data-slider__slide="1"></button>
+            <button class="tablet__controls-slide" data-slider__slide="2"></button>
           </div>
         </div>
       </div>
@@ -222,7 +223,7 @@
 </div>
 
   <section class="contact">
-    <div class="container">
+    <div class="contact container">
       <p class="contact__text">Остались вопросы? Свяжитесь с нами!</p>
         <ul class="contact__list">
             <li class="contact__item">

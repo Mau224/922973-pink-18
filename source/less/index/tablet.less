@@ -2,7 +2,7 @@
   width: 320px;
   position: relative;
   overflow: hidden;
-  margin: 51px auto 50px;
+  margin: 23px auto 50px;
   padding-bottom: 91px;
   padding-top: 62px;
 }
@@ -33,7 +33,7 @@
 
 .tablet__slider-static {
   border-collapse: collapse;
-  transform: translateX(-533px);
+  transform: translateX(-529px);
 }
 
 .tablet__cell {
@@ -101,6 +101,8 @@
   margin: 0 auto;
   margin-top: 32px;
   text-align: center;
+  padding-right: 8px;
+  padding-bottom: 10px;
 }
 
 .tablet__element {
@@ -139,8 +141,8 @@
   content: "";
   width: 61px;
   height: 61px;
-  top: 0;
-  left: 545px;
+  top: 3px;
+  left: 550px;
   position: absolute;
   background: url("../img/hit-ribbon.png");
 }
@@ -153,8 +155,8 @@
   font-size: 14px;
   transform: rotate(-45deg);
   top: 0;
+  left: 526px;
   font-weight: lighter;
-  margin-left: -220px;
   margin-top: 7px;
   position: absolute;
 }
@@ -183,6 +185,8 @@
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
+  border: none;
+  background: none;
 }
 
 .tablet__controls-slide::after {
@@ -229,11 +233,11 @@
   }
 }
 
-//.tablet__controls-slide.tablet__controls-slide {
-//  &--active::after {
-//    display: none;
-//  }
-//}
+.tablet__mobaile-container {
+  background-image: url("../img/back-mobail.svg");
+  background-size: 660px;
+  background-position-y: -68px;
+}
 
 @media (min-width: @tablet-width) {
   .tablet__static {
@@ -241,13 +245,11 @@
     display: flex;
     justify-content: center;
     position: relative;
-    margin: 0 auto;
     overflow: visible;
-    margin-top: 70px;
-    margin-bottom: 46px;
+    margin: -46px auto 46px;
     background-color: #f2f2f2;
     padding-bottom: 76px;
-    padding-top: 8px;
+    padding-top: 27px;
   }
 
   .tablet__controls-wrapper {
@@ -312,7 +314,7 @@
     font-size: 14px;
     transform: rotate(-45deg);
     top: 0;
-    margin-left: -139px;
+    left: 289px;
     margin-top: 3px;
     position: absolute;
   }
@@ -404,7 +406,7 @@
     background-color: #f2f2f2;
     transform: skewY(-3.5deg);
     right: 0;
-    top: -119px;
+    top: -141px;
   }
 
   .tablet__cell {
@@ -474,7 +476,7 @@
     width: 60px;
     height: 61px;
     top: 0;
-    left: 464px;
+    left: 470px;
     position: absolute;
     background: url("../img/hit-ribbon.png");
   }
@@ -486,8 +488,8 @@
     color: white;
     font-size: 16px;
     transform: rotate(-45deg);
-    top: 0;
-    left: 582px;
+    top: 3px;
+    left: 444px;
     position: absolute;
   }
 

@@ -84,7 +84,7 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .container__main-menu {
+  .page-header__main-menu {
     width: 940px;
     position: relative;
     margin: 0 auto;
@@ -92,7 +92,7 @@ a {
   .presentation__container-clock {
     background-color: #ececec;
   }
-  .container_menu-background {
+  .page-header__menu-background {
     background-color: rgba(0, 0, 0, 0.4);
   }
   .container__presentation {
@@ -2745,7 +2745,7 @@ a {
     width: 336px;
   }
 }
-.form-message__list-message {
+.form-feedback__list-message {
   width: 100%;
   text-align: center;
   list-style: none;
@@ -2879,7 +2879,7 @@ a {
     margin-left: 40px;
     margin-bottom: -10px;
   }
-  .form-message__list-message {
+  .form-feedback__list-message {
     width: 606px;
     text-align: center;
     list-style: none;
@@ -2904,7 +2904,7 @@ a {
   }
 }
 @media (min-width: 960px) {
-  .form-message__list-message {
+  .form-feedback__list-message {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;

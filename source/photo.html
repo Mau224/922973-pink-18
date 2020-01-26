@@ -11,24 +11,24 @@
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
-<header class="page-header page-header--active">
-  <div class="page-header__wrapper--active">
-    <div class="container__menu-background">
-      <div class="container__back-desktop">
+<header class="page-header">
+  <div class="page-header__wrapper">
+    <div class="page-header__menu-background">
+      <div class="page-header__back-desktop">
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper-logo">
             <div class="main-nav__logo">
-              <div class="main-nav__header-link">
+              <a class="main-nav__header-link" href="index.html">
                 <picture>
                   <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
                   <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet-pink.svg">
                   <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="логотип">
                 </picture>
-              </div>
+              </a>
             </div>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
-              <svg class="main-nav__toggle-img--first main-nav__toggle-img main-nav__toggle-img--opened" width="50" height="24"><use xlink:href="img/sprite.svg#icon-menu-burger"></use></svg>
-              <svg class="main-nav__toggle-img--last main-nav__toggle-img main-nav__toggle-img--closed" width="24" height="23"><use xlink:href="img/sprite.svg#icon-menu-cross"></use></svg>
+              <svg class="main-nav__toggle-img main-nav__toggle-img--first main-nav__toggle-img main-nav__toggle-img--opened" width="50" height="24"><use xlink:href="img/sprite.svg#icon-menu-burger"></use></svg>
+              <svg class="main-nav__toggle-img main-nav__toggle-img--last main-nav__toggle-img main-nav__toggle-img--closed" width="24" height="23"><use xlink:href="img/sprite.svg#icon-menu-cross"></use></svg>
             </button>
           </div>
           <div class="main-nav__wrapper">
@@ -74,12 +74,12 @@
           </picture>
           </a>
           <div class="reviews__item-main">
-            <cite class="reviews__author-name--main"><strong>Анна </strong>(3 часов назад)</cite>
+            <cite class="reviews__author-name reviews__author-name--main"><strong>Анна </strong>(3 часов назад)</cite>
             <p class="reviews__text reviews__text--active">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <div class="reviews__like-wrapper-main">
-              <a class="reviews__like-button--main" href="#">
+              <button class="reviews__like-button--main">
                 <img class="reviews__author-like-image" src="img/icon-heart-svg.svg" width="13" height="12" alt="лайк">
-              </a>
+              </button>
               <p class="reviews__author-like--main">Нравится: 215</p>
             </div>
           </div>
@@ -101,9 +101,9 @@
                 <cite class="reviews__author-name"><strong>Левон</strong>(5 часов назад)</cite>
                 <p class="reviews__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <div class="reviews__like-wrapper">
-                  <a class="reviews__like-button" href="#">
+                  <button class="reviews__like-button">
                     <img class="reviews__author-like-image" src="img/icon-heart-svg.svg" width="13" height="12" alt="лайк">
-                  </a>
+                  </button>
                   <p class="reviews__author-like">Нравится: 356</p>
                 </div>
               </div>
@@ -124,9 +124,9 @@
                 <cite class="reviews__author-name"><strong>Антон</strong> (12 часов назад)</cite>
                 <p class="reviews__text">Соседи будут рады!</p>
                 <div class="reviews__like-wrapper">
-                  <a class="reviews__like-button" href="#">
+                  <button class="reviews__like-button">
                     <img class="reviews__author-like-image" src="img/icon-heart-svg.svg" width="13" height="12" alt="лайк">
-                  </a>
+                  </button>
                   <p class="reviews__author-like">Нравится: 666</p>
                 </div>
               </div>
@@ -147,9 +147,9 @@
                 <cite class="reviews__author-name"><strong>Борис</strong> (20 часов назад)</cite>
                 <p class="reviews__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <div class="reviews__like-wrapper">
-                  <a class="reviews__like-button" href="#">
+                  <button class="reviews__like-button">
                     <img class="reviews__author-like-image" src="img/icon-heart-svg.svg" width="13" height="12" alt="лайк">
-                  </a>
+                  </button>
                   <p class="reviews__author-like">Нравится: 215</p>
                 </div>
               </div>
@@ -170,9 +170,9 @@
                 <cite class="reviews__author-name"><strong>Сергей</strong> (25 часов назад)</cite>
                 <p class="reviews__text">Самая кубанская в мире!</p>
                 <div class="reviews__like-wrapper">
-                  <a class="reviews__like-button" href="#">
+                  <button class="reviews__like-button">
                     <img class="reviews__author-like-image" src="img/icon-heart-svg.svg" width="13" height="12" alt="лайк">
-                  </a>
+                  </button>
                   <p class="reviews__author-like">Нравится: 4</p>
                 </div>
               </div>
@@ -193,9 +193,9 @@
                 <cite class="reviews__author-name"><strong>Максим</strong> (40 часов назад)</cite>
                 <p class="reviews__text">Где снег-то?</p>
                 <div class="reviews__like-wrapper">
-                  <a class="reviews__like-button" href="#">
+                  <button class="reviews__like-button">
                     <img class="reviews__author-like-image" src="img/icon-heart-svg.svg" width="13" height="12" alt="лайк">
-                  </a>
+                  </button>
                   <p class="reviews__author-like">Нравится: 150</p>
                 </div>
               </div>
@@ -216,9 +216,9 @@
                 <cite class="reviews__author-name"><strong>Надежда</strong> (45 часов назад)</cite>
                 <p class="reviews__text">Всем GM и взаимные лайки!</p>
                 <div class="reviews__like-wrapper">
-                  <a class="reviews__like-button" href="#">
+                  <button class="reviews__like-button">
                     <img class="reviews__author-like-image" src="img/icon-heart-svg.svg" width="13" height="12" alt="лайк">
-                  </a>
+                  </button>
                   <p class="reviews__author-like">Нравится: 2560</p>
                 </div>
             </div>
@@ -248,9 +248,9 @@
               </li>
             </ul>
             <ul class="photo-editor__form-filters">
-              <li class="photo-editor__filters-range"><div class="photo-editor__filters-border"></div></li>
-              <li class="photo-editor__filters-range--two photo-editor__filters-range--disable"><div class="photo-editor__filters-border photo-editor__filters-border--two"></div></li>
-              <li class="photo-editor__filters-range--tree photo-editor__filters-range--disable"><div class="photo-editor__filters-border photo-editor__filters-border--tree"></div></li>
+              <li class="photo-editor__filters-range photo-editor__filters-range--one"><div class="photo-editor__filters-border"></div></li>
+              <li class="photo-editor__filters-range photo-editor__filters-range--two photo-editor__filters-range--disable"><div class="photo-editor__filters-border photo-editor__filters-border--two"></div></li>
+              <li class="photo-editor__filters-range photo-editor__filters-range--tree photo-editor__filters-range--disable"><div class="photo-editor__filters-border photo-editor__filters-border--tree"></div></li>
             </ul>
             <div class="photo-editor__buttons">
               <button class="photo-editor__button button button--rounded button--red" type="submit">Запостить</button>
@@ -263,7 +263,7 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__wrapper">
+    <div class="footer__wrapper footer__wrapper--photo">
       <picture>
         <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
         <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
