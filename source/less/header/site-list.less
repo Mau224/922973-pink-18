@@ -51,29 +51,11 @@
   }
 }
 
-//.site-list__icon-copyright {
+//.copyright__icon-academy {
 //  fill: #d22856;
 //}
 
-.site-list__icon-copyright:hover {
-  fill: black;
-}
-
-.site-list__icon-copyright:active {
-  fill: #000000;
-  opacity: 0.3;
-}
-
-.site-list__icon-comb {
-  fill: #d22856;
-}
-
-.site-list__icon-copyright {
-  width: 27px;
-  height: 34px;
-  position: relative;
-  top: 11px;
-  left: 4px;
+.social__icon-comb {
   fill: #d22856;
 }
 
@@ -87,25 +69,15 @@
     padding-top: 31px;
     padding-bottom: 29px;
   }
-
-  .site-list__icon-copyright {
-    width: 27px;
-    height: 34px;
-    position: relative;
-    top: 11px;
-    left: -20px;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .site-list {
-    width: 709px;
     display: flex;
     flex-direction: row;
     text-align: center;
     margin-left: auto;
     justify-content: space-around;
-    padding-left: 63px;
     padding-top: 0;
   }
 
@@ -115,6 +87,7 @@
 
   .site-list__item {
     background: none;
+    margin-left: 80px;
 
     &--active {
       display: flex;
@@ -135,9 +108,5 @@
     padding-top: 20px;
     background: none;
     border: none;
-  }
-
-  .site-list__icon-copyright {
-    left: 0;
   }
 }

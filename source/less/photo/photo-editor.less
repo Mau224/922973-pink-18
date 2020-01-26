@@ -1,6 +1,7 @@
 .photo-editor {
   width: 320px;
   margin: 0 auto;
+  margin-bottom: -15px;
 }
 
 .photo-editor__title {
@@ -25,6 +26,11 @@
   width: 44px;
   height: 44px;
   opacity: 0.5;
+
+  &--active {
+    fill: #d22856;
+    opacity: 1;
+  }
 }
 
 .photo-editor__icon-contrast:active {
@@ -58,13 +64,17 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding-top: 400px;
-  background: url("../img/photo-7-mobile-jpg.jpg");
+  background: url("../img/photo-road-mobile@1x.jpg");
   background-position: top;
   background-position-y: 3%;
   background-position-x: 20px;
   background-size: 87%;
   background-repeat: no-repeat;
   padding-bottom: 26px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/photo-road-mobile@2x.jpg");
+  }
 }
 
 
@@ -120,6 +130,14 @@
   &--disabled {
     display: none;
   }
+
+  &--two {
+    display: none;
+  }
+
+  &--one {
+    display: none;
+  }
 }
 
 //.photo-editor__filters-range
@@ -136,14 +154,14 @@
 
 .photo-editor__filters-range:active::after {
   background-color: #d22856;
+}
 
-  &--two:active::after {
-    background-color: #d22856;
-  }
+.photo-editor__filters-range--two:active::after {
+  background-color: #d22856;
+}
 
-  &--tree:active::after {
-    background-color: #d22856;
-  }
+.photo-editor__filters-range--tree:active::after {
+  background-color: #d22856;
 }
 
 //.photo-editor__filters-range {
@@ -176,42 +194,9 @@
   width: 280px;
   height: 56px;
   border-radius: 50px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   padding-left: 0;
   outline: none;
-}
-
-.button--red {
-  color: #d22856;
-  background-color: #ececec;
-  border: 3px solid #d22856;
-}
-
-.button--gray {
-  color: rgba(40, 54, 69, 0.1);
-  background-color: #ececec;
-  border: 3px solid rgba(40, 54, 69, 0.1);
-}
-
-.button--gray:hover {
-  color: rgba(40, 54, 69, 0.3);
-  border: 3px solid rgba(40, 54, 69, 0.3);
-}
-
-.button--gray:active {
-  color: rgba(40, 54, 69, 0.1);
-  background-color: gray;
-  border: 3px solid gray;
-}
-
-.button--red:hover {
-  color: white;
-  background-color: #d22856;
-}
-
-.button--red:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #d22856;
 }
 
 //.photo-editor__filters-range {
@@ -228,7 +213,7 @@
 @media (min-width: @tablet-width) {
   .photo-editor {
     width: 660px;
-    margin: 0 auto;
+    margin: 0 auto -19px;
   }
 
   .photo-editor__icon-comb {
@@ -237,9 +222,8 @@
   }
 
   .photo-editor__title {
-    margin-top: -62px;
     width: 424px;
-    margin-bottom: 67px;
+    padding-top: 2px;
   }
 
   .photo-editor__content-wrapper {
@@ -257,12 +241,16 @@
     flex-wrap: wrap;
     padding-left: 350px;
     padding-top: 0;
-    background: url("../img/photo-7-mobile-jpg.jpg");
+    background: url("../img/photo-road-tablet@1x.jpg");
     background-position: center;
     background-position-y: 33%;
     background-position-x: 6%;
     background-size: 45%;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/photo-road-tablet@2x.jpg");
+    }
   }
 
   .photo-editor__filters-buttons {
@@ -295,7 +283,24 @@
     padding-top: 35px;
   }
 
+  .photo-editor__filters-range::before {
+    width: 202px;
+    transform: translate(-33px, 27px);
+  }
+
+  .photo-editor__filters-range::after {
+    transform: translate(114px, 21px);
+  }
+
   .photo-editor__filters-range {
+    &--one {
+      display: block;
+    }
+
+    &--two {
+      display: block;
+    }
+
     &--two::before {
       content: "";
       position: absolute;
@@ -374,15 +379,6 @@
   //  }
   //}
 
-  .photo-editor__filters-range::before {
-    width: 202px;
-    transform: translate(-33px, 27px);
-  }
-
-  .photo-editor__filters-range::after {
-    transform: translate(114px, 21px);
-  }
-
   .photo-editor__filters-border::before {
     content: "";
     position: absolute;
@@ -430,6 +426,7 @@
   .photo-editor__button {
     width: 260px;
     margin-right: 15px;
+    margin-top: 6px;
   }
 
   .photo-editor__header {
@@ -446,8 +443,9 @@
 
 @media (min-width: @desktop-width) {
   .photo-editor {
-    width: 960px;
+    width: auto;
     margin: 0 auto;
+    margin-bottom: 0;
   }
 
   .photo-editor__icon-comb {
@@ -463,15 +461,19 @@
   }
 
   .photo-editor__form-photo {
-    padding-top: 35px;
+    padding-top: 34px;
     padding-left: 400px;
-    background: url("../img/photo-7-mobile-jpg.jpg");
+    background: url("../img/photo-road-desktop@1x.jpg");
     background-position: center;
     background-position-y: 31%;
     background-position-x: 12%;
     background-size: 32%;
     background-repeat: no-repeat;
     padding-bottom: 19px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/photo-road-desktop@2x.jpg");
+    }
   }
 
   .photo-editor__button {
@@ -484,7 +486,7 @@
     flex-direction: row;
     margin-right: 0;
     padding-left: 69px;
-    padding-top: 99px;
+    padding-top: 95px;
   }
 
   //.photo-editor__filters-range
@@ -512,6 +514,11 @@
       transform: translate(88px, -14px);
     }
 
+    &::before {
+      width: 288px;
+      transform: translate(17px, -7px);
+    }
+
     &--tree::after {
       transform: translate(177px, 110px);
     }
@@ -528,11 +535,6 @@
     &--tree::before {
       width: 288px;
       transform: translate(17px, 115px);
-    }
-
-    &::before {
-      width: 288px;
-      transform: translate(17px, -7px);
     }
   }
 

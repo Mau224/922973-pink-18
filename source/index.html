@@ -14,34 +14,29 @@
 </head>
 
 <body>
-
-<div style="display:none">
-  <include src="build/img/sprite.svg"></include>
-</div>
-
-<header class="page-header page-header--active">
-    <div class="page-header__wrapper">
-      <div class="container_menu-background">
-      <div class="container__main-menu">
-        <nav class="main-nav main-nav--opend">
+<header class="page-header">
+  <div class="page-header__wrapper">
+    <div class="page-header__menu-background">
+      <div class="page-header__back-desktop">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper-logo">
             <div class="main-nav__logo">
-              <a class="main-nav__header-link" href="index.html">
+              <div class="main-nav__header-link--index">
                 <picture>
                   <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
                   <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet-pink.svg">
-                  <img class="main-nav__logo-image" src="img/logotype-white-mobile-svg.svg">
+                  <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="логотип">
                 </picture>
-              </a>
+              </div>
             </div>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
-              <svg class="main-nav__toggle--first main-nav__toggle--opened" width="50" height="24"><use xlink:href="#icon-burger"></use></svg>
-              <svg class="main-nav__toggle--last main-nav__toggle--closed" width="24" height="23"><use xlink:href="#icon-cross"></use></svg>
+              <svg class="main-nav__toggle-img main-nav__toggle-img--first main-nav__toggle-img main-nav__toggle-img--opened" width="50" height="24"><use xlink:href="img/sprite.svg#icon-menu-burger"></use></svg>
+              <svg class="main-nav__toggle-img main-nav__toggle-img--last main-nav__toggle-img main-nav__toggle-img--closed" width="24" height="23"><use xlink:href="img/sprite.svg#icon-menu-cross"></use></svg>
             </button>
-        </div>
+          </div>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
+              <li class="site-list__item">
                 <a href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
@@ -58,62 +53,63 @@
         </nav>
     </div>
   </div>
-    <section class="main-nav__application-navigation">
-      <p class="main-nav__hard-text">Взгляните на жизнь иначе!</p>
+    <section class="application-navigation">
+      <p class="application-navigation__hard-text">Взгляните на жизнь иначе!</p>
       <div class="application-navigation__photo-wrapper">
         <picture>
           <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-6-copy.webp 1x, img/iphone-6-copy@2x.webp 2x">
-<!--          <source type="image/webp" srcset="img/iphone-5-in-hand-png.webp 1x, img/iphone-5-in-hand-png@2x.webp">-->
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
 
           <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
-          <source media="(min-width: 660px)" srcset="img/iphone-6-copy.png 1x, img/iphone-6-copy@2x.png 2x">
-          <img class="application-navigation__font-photo" src="img/iphone-5-in-hand-png.png" alt="рука с телефоном">
+          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+          <img class="application-navigation__font-photo" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png" width="260" height="290" alt="рука с телефоном">
         </picture>
       </div>
       <div class="application-navigation__link-wrapper">
-        <a href="#" class="application-navigation__link">Скачать приложение</a>
+        <div class="application-navigation__font-container">
+        <a href="https://www.apple.com/ios/app-store/" class="application-navigation__link">Скачать приложение</a>
         <div class="application-navigation__wrapper">
-          <a href="https://www.apple.com/ru/ios/app-store/"><img class="application-navigation__link-img" src="img/apple-logo-svg.svg" width="47" height="56" alt="apple"></a>
+          <a href="https://www.apple.com/ios/app-store/"><img class="application-navigation__link-img" src="img/apple-logo-svg.svg" width="47" height="56" alt="apple"></a>
           <a href="https://play.google.com/store/apps/details?id=com.google.android.finsky&hl=ru"><img class="application-navigation__link-img" src="img/android-logo-svg.svg" width="43" height="47" alt="android"></a>
           <a href="https://www.microsoft.com/ru-ru/store/apps/windows"><img class="application-navigation__link-img" src="img/microsoft-logo-svg.svg" width="44" height="41" alt="windows"></a>
         </div>
           <p class="application-navigation__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
+      </div>
     </section>
     </div>
   </header>
 
   <main class="page-main">
-    <p class="page-main__headline headline-first">Устали от серости мегаполиса?</p>
-    <p class="page-main__headline headline-second">Нам есть, что вам предложить!</p>
-    <section class="page-main__presentation">
-      <div class="container__presentation">
+    <p class="page-main__headline page-main__headline-first">Устали от серости мегаполиса?</p>
+    <p class="page-main__headline page-main__headline-second">Нам есть, что вам предложить!</p>
+    <section class="presentation">
+      <div class="presentation container__presentation">
         <ul class="presentation__list">
           <li class="presentation__item">
             <picture>
-              <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, iphone-screen-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x,img/iphone-screen-1-desktop@2x.webp 2x">
 
-              <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
-              <img class="presentation__photo photo-active" src="img/iphone-screen-3-mobali.png" width="" height="300" alt="скрин с улыбкой">
+              <img class="presentation__photo photo-active" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="300" height="300" alt="скрин с улыбкой">
             </picture>
-            <p class="presentation__headline"><strong>Поднимает настроение</strong></p>
+            <p class="presentation__headline presentation__headline--first"><strong>Поднимает настроение</strong></p>
             <p class="presentation__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="presentation__item">
             <picture>
-              <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, iphone-screen-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x,img/iphone-screen-2-desktop@2x.webp 2x">
 
-              <img class="presentation__photo" src="img/iphone-screen-2-desktop@1x.png" width="" height="300" alt="скрин с улыбкой">
+              <img class="presentation__photo" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="300" height="300" alt="скрин с улыбкой">
             </picture>
             <p class="presentation__headline"><strong>Меняет мир вокруг</strong></p>
-            <p class="presentation__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <p class="presentation__text presentation__text--center">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <span class="presentation__text-center"></span>усилить эффект</p>
           </li>
           <li class="presentation__item">
             <picture>
-              <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, iphone-screen-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x,img/iphone-screen-3-desktop@2x.webp 2x">
 
-              <img class="presentation__photo" src="img/iphone-screen-3-desktop@1x.png" width="" height="300" alt="скрин с улыбкой">
+              <img class="presentation__photo" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="300" height="300" alt="скрин с улыбкой">
             </picture>
             <p class="presentation__headline"><strong>Заводит новых друзей</strong></p>
             <p class="presentation__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
@@ -121,11 +117,11 @@
         </ul>
       </div>
 
-      <div class="container__clock">
+      <div class="presentation__container-clock">
         <div class="presentation__clock-wrapper">
           <div class="presentation__clock-text-wrraper">
             <p class="presentation__clock-headline"><span class="presentation__clock-span">Эффект</span> на 24 часа!</p>
-            <p class="presentation__clock-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <p class="presentation__clock-text">Британские ученые провели исследования и доказали,<span class="presentation__clock-center"></span> что положительный эффект от использования приложения длится целые сутки!</p>
             <a href="#" class="presentation__clock-link">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -135,89 +131,90 @@
   <section class="slider">
     <div id="slider">
       <div class="slider__wrapper">
-        <div class="slide active">
-          <div class="slide__wrapper">
+        <div class="slider__slide active">
+          <div class=" slider__slide-wrapper">
             <h3>Николай Петров</h3>
-            <p class="slide__author-info">25 лет, водитель трамвая</p>
+            <p class="slider__slide-info">25 лет, водитель трамвая</p>
           </div>
-          <p class="slider-reviews">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+          <p class="slider__reviews">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
-        <div class="slide">
+        <div class="slider__slide">
         </div>
-        <div class="slide">
+        <div class="slider__slide">
         </div>
       </div>
     </div>
-    <div class="controls">
-      <a class="slide-control active" href="#" data-slide="0"></a>
-      <a class="slide-control" href="#" data-slide="1"></a>
-      <a class="slide-control" href="#" data-slide="2"></a>
+    <div class="slider__controls">
+      <button class="slider__slide-control active" data-slider__slide="0"></button>
+      <button class="slider__slide-control" data-slider__slide="1"></button>
+      <button class="slider__slide-control" data-slider__slide="2"></button>
     </div>
-    <div class="controls-desktop">
-      <a class="slide-control__desktop" href="#" data-slide="0">
-        <img class="slide-control__desktop-left" src="img/left-arrow-svg.svg" width="22" height="41" alt="левая стрелка">
-      </a>
-      <a class="slide-control__desktop" href="#" data-slide="1">
-        <img class="slide-control__desktop-right" src="img/right-arrow-svg.svg" width="22" height="41" alt="правая стрелка">
-      </a>
+    <div class="slider control__desktop">
+      <button class="control__desktop-slide" data-slider__slide="0">
+        <img class="control__desktop-slide--left" src="img/left-arrow-svg.svg" width="22" height="41" alt="левая стрелка">
+      </button>
+      <button class="control__desktop-slide" data-slider__slide="1">
+        <img class="control__desktop-slide--right" src="img/right-arrow-svg.svg" width="22" height="41" alt="правая стрелка">
+      </button>
     </div>
   </section>
-<div class="container__mobail">
+
+<div class="tablet__mobaile-container">
   <section class="tablet__static">
     <div id="tablet__main-section">
       <div class="tablet__wrapper">
-        <div class="tablet-slider">
-          <table class="tablet-slider tablet-slider__static">
-            <tr class="tablet-header">
-              <th class="tablet-cell tablet-cell__disable"></th>
-              <th class="tablet-cell tablet-header">
-                <p class="tablet-text tablet-text--main">База <br><span class="tablet-price">1,99 USD</span></p>
+        <div class="tablet__slider">
+          <table class="tablet__slider tablet__slider-static">
+            <tr class="tablet__header">
+              <th class="tablet__cell tablet__cell-disable"></th>
+              <th class="tablet__cell tablet__header">
+                <p class="tablet__text tablet__text--main">База <br><span class="tablet__price">1,99 USD</span></p>
               </th>
               <th>
-                <p class="tablet-text tablet-text--main tablet-hit">Стандарт <br><span class="tablet-price">3,99 USD</span></p>
+                <p class="tablet__text tablet__text--main tablet__hit">Стандарт <br><span class="tablet__price">3,99 USD</span></p>
               </th>
-              <th class="tablet-cell tablet-header">
-                <p class="tablet-text tablet-text--main">Анлим <br><span class="tablet-price">9,99 USD</span></p>
+              <th class="tablet__cell tablet__header">
+                <p class="tablet__text tablet__text--main">Анлим <br><span class="tablet__price">9,99 USD</span></p>
               </th>
             </tr>
-            <tr class="tablet-row">
-              <td class="tablet-element">
-                <p class="tablet-text">Розовый фильтр</p>
+            <tr class="tablet__row">
+              <td class="tablet__element">
+                <p class="tablet__text">Розовый фильтр</p>
               </td>
-              <td class="tablet-element tablet-element--active"></td>
-              <td class="tablet-element tablet-element--active">
-                <p class="tablet-text tablet-text__filters tablet-text--disabled">Розовый фильтр</p>
+              <td class="tablet__element tablet__element--active"></td>
+              <td class="tablet__element tablet__element--active">
+                <p class="tablet__text tablet__text-filters tablet__text--disabled">Розовый фильтр</p>
               </td>
-              <td class="tablet-element tablet-element--active"></td>
+              <td class="tablet__element tablet__element--active"></td>
             </tr>
-            <tr class="tablet-row">
-              <td class="tablet-element">
-                <p class="tablet-text">Смайлики</p>
+            <tr class="tablet__row">
+              <td class="tablet__element">
+                <p class="tablet__text">Смайлики</p>
               </td>
-              <td class="tablet-element tablet-element--disabled"></td>
-              <td class="tablet-element tablet-element--active">
-                <p class="tablet-text tablet-text__filters tablet-text--disabled">Смайлики</p>
+              <td class="tablet__element tablet__element--disabled"></td>
+              <td class="tablet__element tablet__element--active">
+                <p class="tablet__text tablet__text-filters tablet__text--disabled">Смайлики</p>
               </td>
-              <td class="tablet-element tablet-element--active"></td>
+              <td class="tablet__element tablet__element--active"></td>
             </tr>
-            <tr class="tablet-row">
-              <td class="tablet-element">
-                <p class="tablet-text">Комментарии</p>
+            <tr class="tablet__row">
+              <td class="tablet__element">
+                <p class="tablet__text">Комментарии</p>
               </td>
-              <td class="tablet-element tablet-element--disabled"></td>
-              <td class="tablet-element tablet-element--disabled">
-                <p class="tablet-text tablet-text__filters tablet-text--disabled">Комментарии</p>
+              <td class="tablet__element tablet__element--disabled"></td>
+              <td class="tablet__element tablet__element--disabled">
+                <p class="tablet__text tablet__text-filters tablet__text--disabled">Комментарии</p>
               </td>
-              <td class="tablet-element tablet-element--active"></td>
+              <td class="tablet__element tablet__element--active"></td>
             </tr>
           </table>
         </div>
-        <div class="tablet-controls__wrapper">
-          <div class="tablet-controls">
-            <a class="tablet__slide-control" href="#" data-slide="0"></a>
-            <a class="tablet__slide-control tablet__slide-control--active" href="#" data-slide="1"></a>
-            <a class="tablet__slide-control" href="#" data-slide="2"></a>
+        <div class="tablet__controls-wrapper">
+          <div class="tablet__controls">
+            <button class="tablet__controls-slide" data-slider__slide="0"></button>
+            <button class="tablet__controls-slide tablet__controls-slide--active" data-slider__slide="1"></button>
+            <button class="tablet__controls-slide" data-slider__slide="2"></button>
           </div>
         </div>
       </div>
@@ -226,54 +223,60 @@
 </div>
 
   <section class="contact">
-    <div class="container">
-      <p class="contact-text">Остались вопросы? Свяжитесь с нами!</p>
-        <ul class="contact-list">
-            <li class="contact-item">
+    <div class="contact container">
+      <p class="contact__text">Остались вопросы? Свяжитесь с нами!</p>
+        <ul class="contact__list">
+            <li class="contact__item">
               <b>Звоните:</b><br>
               <a href="tel:+78125556666">+7 (812) 555-66-66</a>
             </li>
-            <li class="contact-item contact-item--one">
-              <b>Пишите:</b><br>
+            <li class="contact__item contact__item--one">
+              <b class="contact__text-header contact__text-header--two">Пишите:</b><br>
               <a class="contact__academy-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
-            <li class="contact-item contact-item--two">
-              <b>Приезжайте в гости:</b><br>
-              <a>ул. Большая<br>Конюшенная, 19/8 </a>
+            <li class="contact__item contact__item--two">
+              <b class="contact__text-header contact__text-header--tree">Приезжайте в гости:</b><br>
+              <a class="contact__text-link">ул. Большая<br>Конюшенная, 19/8 </a>
             </li>
         </ul>
     </div>
-    <div class="contact-map__wrapper">
-      <div class="contact-map__inner">
-        <div id="map" class="contact-map__map"></div>
+    <div class="contact__bottom-wrapper">
+      <div class="contact__map-inner">
+        <div id="map" class="contact__map-base"></div>
       </div>
     </div>
   </section>
 
   <footer class="footer footer__disable">
-    <div class="footer__wrapper">
-        <svg class="footer__footer-logo" width="147" height="40"><use xlink:href="#icon-footer-logo"></use></svg>
+    <div class="footer__wrapper footer__wrapper--index">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+        <img class="footer__footer-logo" src="img/logo-pink-blue-mobile.svg" alt="логотип">
+      </picture>
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy"><img class="site-list__icon-comb" src="img/icon-twitter.svg" width="18" height="14" alt="твиттер"></a>
+            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy"><img class="social__icon-comb" src="img/icon-twitter.svg" width="18" height="14" alt="твиттер"></a>
           </li>
           <li class="social__item social__item-center">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><img class="site-list__icon-comb" src="img/icon-facebook.svg" width="9" height="19" alt="фейсбук"></a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><img class="social__icon-comb" src="img/icon-facebook.svg" width="9" height="19" alt="фейсбук"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"><img class="site-list__icon-comb" src="img/icon-youtube.svg" width="18" height="14" alt="ютюб"></a>
+            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"><img class="social__icon-comb" src="img/icon-youtube.svg" width="18" height="14" alt="ютюб"></a>
           </li>
         </ul>
       </div>
       <p class="footer__copyright copyright">
-        <b class="footer__copyright-text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg class="site-list__icon-copyright" width="16" height="16"><use xlink:href="#icon-htmlacademy"></use></svg></a>
+        <b class="footer__copyright-text">Разработано</b>
+        <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive"><svg class="copyright__icon-academy" width="16" height="16"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg></a>
       </p>
     </div>
   </footer>
-</body>
-<script src="js/map.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEe6gK3a-MKyU_yLz_piioAJlIx08VK2E&callback=initMap"></script>
 <script src="js/script.min.js"></script>
+<script src="js/map.min.js"></script>
+<script src="js/picturefill.min.js"></script>
+<script src="js/svgxuse.min.js" defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEe6gK3a-MKyU_yLz_piioAJlIx08VK2E&callback=initMap"></script>
+</body>
 </html>

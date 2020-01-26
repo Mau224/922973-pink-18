@@ -1,13 +1,13 @@
-.form-feedback__submit-wrapper {
+.form-submit__wrapper {
   width: 320px;
   margin: 0 auto;
 }
 
-.form-feedback__button {
-  width: 276px;
+.form-submit__button {
+  width: 278px;
   height: 60px;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
@@ -18,45 +18,47 @@
   margin-left: 21px;
   border: 2px solid #2aab6d;
   border-radius: 2px;
-  margin-top: 51px;
+  margin-top: 47px;
 }
 
-.form-feedback__notification-aux {
+.form-submit__notification-aux {
   display: none;
 }
 
-.form-feedback__asterix {
+.form-submit__asterix {
   color: #d22856;
 }
 
-.form-feedback__notification {
-  margin: 40px auto 0 46px;
+.form-submit__notification {
+  margin: 40px auto 0 69px;
+  margin-bottom: 20px;
 }
 
-.form-feedback__button:hover {
+.form-submit__button:hover {
   background-color: #1c9b5e;
 }
 
-.form-feedback__button:active {
+.form-submit__button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: @tablet-width) {
-  .form-feedback__submit-wrapper {
+  .form-submit__wrapper {
     display: flex;
     width: 660px;
     align-items: center;
     justify-content: space-between;
     order: 5;
+    margin-bottom: 48px;
   }
 
-  .form-feedback__notification {
-    margin-top: 70px;
+  .form-submit__notification {
+    margin-top: 94px;
     font-size: 16px;
     margin-left: 140px;
   }
 
-  .form-feedback__button {
+  .form-submit__button {
     width: 296px;
     margin-top: 71px;
     margin-left: 23px;
@@ -64,31 +66,31 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form-feedback__submit-wrapper {
+  .form-submit__wrapper {
     display: flex;
     width: 960px;
     align-items: center;
     justify-content: space-between;
     order: 5;
-    margin-bottom: -29px;
+    margin-bottom: -25px;
   }
 
-  .form-feedback__notification-aux {
+  .form-submit__notification-aux {
     display: block;
     margin-left: 3px;
     margin-right: 3px;
   }
 
-  .form-feedback__notification {
+  .form-submit__notification {
     width: 312px;
     display: flex;
-    margin-top: 65px;
-    margin-left: 330px;
+    margin-top: 81px;
+    margin-left: 331px;
   }
 
-  .form-feedback__button {
-    width: 296px;
-    margin-top: 68px;
-    margin-left: 11px;
+  .form-submit__button {
+    width: 297px;
+    margin-top: 65px;
+    margin-left: 12px;
   }
 }
