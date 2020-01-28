@@ -2,7 +2,7 @@
   width: 320px;
   position: relative;
   overflow: hidden;
-  margin: 5px auto 50px;
+  margin: 2px auto 50px;
   padding-bottom: 95px;
   padding-top: 76px;
 }
@@ -186,6 +186,8 @@
   cursor: pointer;
   border: none;
   background: none;
+  padding-bottom: 14px;
+  padding-top: 5px;
 }
 
 .tablet__controls-slide::after {
@@ -240,16 +242,30 @@
 }
 
 @media (min-width: @tablet-width) {
+  .tablet {
+    position: relative;
+  }
+
+  .tablet::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: #f2f2f2;
+    transform: skewY(-4.5deg);
+    right: 0;
+    top: -37px;
+  }
+
   .tablet__static {
     width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
-    overflow: visible;
-    margin: -46px auto 46px;
+    margin: -46px auto 52px;
     background-color: #f2f2f2;
-    padding-bottom: 76px;
-    padding-top: 27px;
+    padding-bottom: 70px;
+    padding-top: 24px;
   }
 
   .tablet__controls-wrapper {
@@ -261,7 +277,7 @@
     position: absolute;
     width: 100%;
     height: 200px;
-    top: -33px;
+    top: -36px;
     left: 0;
     background-color: #f2f2f2;
     transform: skewY(-4.5deg);
@@ -289,7 +305,7 @@
 
   .tablet__header {
     padding: 0;
-    width: 106px;
+    width: 109px;
   }
 
   .tablet__hit::before {
@@ -391,7 +407,8 @@
     margin-bottom: 75px;
     background-color: #f2f2f2;
     padding-bottom: 101px;
-    padding-top: 97px;
+    padding-top: 93px;
+    padding-left: 0;
   }
 
   .tablet__static::before {

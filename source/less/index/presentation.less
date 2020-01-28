@@ -9,8 +9,8 @@
   list-style: none;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 69px;
-  padding-bottom: 331px;
+  margin-top: 73px;
+  padding-bottom: 328px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-color: #ececec;
@@ -25,9 +25,9 @@
   height: 400px;
   position: absolute;
   background-color: #ececec;
-  transform: skewY(-3.5deg);
+  transform: skewY(-6.5deg);
   z-index: 0;
-  margin-top: -37px;
+  margin-top: -32px;
   left: 0;
 }
 
@@ -54,7 +54,8 @@
   line-height: 1.71;
   color: #283645;
   margin-bottom: -8px;
-  margin-top: -3px;
+  margin-top: -2px;
+  margin-left: -3px;
 }
 
 .presentation__clock-wrapper {
@@ -100,7 +101,7 @@
     text-align: left;
     color: #283645;
     margin-top: 11px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
   }
 
   .presentation__clock-center {
@@ -119,7 +120,7 @@
     justify-content: center;
     position: absolute;
     left: -31px;
-    top: -22px;
+    top: -17px;
     width: 311px;
     height: 391px;
     padding-top: 29px;
@@ -136,7 +137,7 @@
   .presentation__clock-wrapper::after {
     content: "";
     color: #d22856;
-    top: 109px;
+    top: 116px;
     left: 23px;
     border: #d22856 solid 13px;
     position: absolute;
@@ -158,7 +159,7 @@
     line-height: 1.71;
     letter-spacing: normal;
     text-align: left;
-    margin-top: 92px;
+    margin-top: 96px;
   }
 
   .presentation__clock-link {
@@ -171,6 +172,10 @@
     text-decoration: underline;
   }
 
+  .presentation__headline {
+    padding-left: 4px;
+  }
+
   .presentation__list {
     width: 293px;
     display: block;
@@ -181,7 +186,7 @@
     background-position: top left;
     background-position-y: 41px;
     background-position-x: 8px;
-    padding: 71px 29px 55px 316px;
+    padding: 71px 29px 49px 316px;
     margin: 5px auto 0;
   }
 
@@ -214,7 +219,8 @@
     letter-spacing: normal;
     text-align: left;
     padding-bottom: 3px;
-    padding-left: 3px;
+    padding-left: 6px;
+    margin-top: -3px;
 
     &--padding {
       margin-left: 20px;
@@ -238,7 +244,7 @@
   .presentation__container {
     background-image: url("../img/background-grey-color.svg");
     background-size: 960px;
-    background-position-y: -10px;
+    background-position-y: -20px;
   }
 }
 
@@ -255,12 +261,9 @@
     justify-content: center;
     background: none;
     background-color: none;
-    padding-left: 0;
-    padding-right: 0;
     z-index: 5;
-    margin-top: 10px;
-    padding-top: 56px;
-    padding-bottom: 15px;
+    margin-top: 21px;
+    padding: 46px 0 15px;
   }
 
   .presentation__text-center {
@@ -304,7 +307,7 @@
     line-height: 30px;
 
     &--first {
-      padding-left: 38px;
+      padding-left: 32px;
     }
   }
 
@@ -376,25 +379,26 @@
     font-size: 18px;
     line-height: 1.71;
     text-align: center;
-    margin-top: 23px;
-    padding-left: 22px;
+    margin-top: 26px;
+    padding-left: 27px;
   }
 
   .presentation__clock-wrapper::before {
-    width: 380px;
-    left: -41px;
-    top: 19px;
+    width: 401px;
+    left: -48px;
+    top: 30px;
+    height: 368px;
     font-size: 120px;
   }
 
   .presentation__clock-wrapper::after {
     content: "";
     color: #d22856;
-    top: 129px;
-    left: 27px;
+    top: 127px;
+    left: 25px;
     border: #d22856 solid 15px;
     position: absolute;
-    width: 213px;
+    width: 220px;
     height: 216px;
     border-radius: 50%;
     text-align: center;
@@ -420,5 +424,13 @@
     background-image: url("../img/background-grey-color.svg");
     background-size: cover;
     background-position-y: 0;
+  }
+
+  .presentation__wrap-desktop {
+    padding-left: 10px;
+  }
+
+  .presentation__clock-center {
+    padding-left: 0;
   }
 }

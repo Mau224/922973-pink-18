@@ -19,7 +19,7 @@
   letter-spacing: normal;
   text-align: center;
   margin-left: 30px;
-  margin-bottom: 51px;
+  margin-bottom: 43px;
 }
 
 .photo-editor__icon-comb {
@@ -71,10 +71,10 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-top: 400px;
+  padding-top: 406px;
   background: url("../img/photo-road-mobile@1x.jpg");
   background-position: top;
-  background-position-y: 3%;
+  background-position-y: 5%;
   background-position-x: 20px;
   background-size: 87%;
   background-repeat: no-repeat;
@@ -247,7 +247,8 @@
 
   .photo-editor__title {
     width: 424px;
-    padding-top: 2px;
+    padding-top: 3px;
+    margin-left: -3px;
   }
 
   .photo-editor__content-wrapper {
@@ -284,7 +285,6 @@
     height: 217px;
     flex-direction: column;
     padding-right: 30px;
-    padding-top: 5px;
   }
 
   .photo-editor__icon-contrast {
@@ -294,7 +294,7 @@
   }
 
   .photo-editor__filters-item {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
   }
 
   .photo-editor__buttons {
@@ -304,7 +304,7 @@
     padding-bottom: 16px;
     margin-top: -3px;
     padding-left: 19px;
-    padding-top: 30px;
+    padding-top: 34px;
   }
 
   .photo-editor__filters-range::before {
@@ -463,6 +463,17 @@
     letter-spacing: normal;
     margin: 43px auto 71px;
   }
+
+  .photo-editor__button-icon {
+    &--copy {
+      margin-top: -4px;
+      margin-bottom: 5px;
+    }
+
+    &--contrast {
+      margin-top: -5px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -534,30 +545,30 @@
 
   .photo-editor__filters-range {
     &::after {
-      transform: translate(88px, -14px);
+      transform: translate(88px, -12px);
     }
 
     &::before {
       width: 288px;
-      transform: translate(17px, -7px);
+      transform: translate(14px, -6px);
     }
 
     &--tree::after {
-      transform: translate(177px, 110px);
+      transform: translate(177px, 112px);
     }
 
     &--two::after {
-      transform: translate(263px, 38px);
+      transform: translate(263px, 40px);
     }
 
     &--two::before {
       width: 288px;
-      transform: translate(16px, 45px);
+      transform: translate(16px, 47px);
     }
 
     &--tree::before {
       width: 288px;
-      transform: translate(17px, 115px);
+      transform: translate(14px, 117px);
     }
   }
 
@@ -593,7 +604,7 @@
 
   .photo-editor__filters-buttons {
     margin-left: 65px;
-    margin-top: -1px;
+    margin-top: 5px;
     padding-right: 0;
   }
 
@@ -643,11 +654,16 @@
     &--fill {
       width: 50px;
       height: 44px;
+      margin-top: -25px;
     }
 
     &--contrast {
       width: 45px;
       height: 35px;
     }
+  }
+
+  .photo-editor__filters-item {
+    margin-bottom: 38px;
   }
 }
