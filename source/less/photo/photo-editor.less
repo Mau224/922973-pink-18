@@ -27,9 +27,17 @@
   height: 44px;
   opacity: 0.5;
 
-  &--active {
+  &--copy {
     fill: #d22856;
     opacity: 1;
+  }
+
+  &--contrast {
+    opacity: 0.5;
+  }
+
+  &--fill {
+    opacity: 0.5;
   }
 }
 
@@ -93,9 +101,10 @@
 }
 
 .photo-editor__filters-item {
-  margin-right: 31px;
-  margin-left: 6px;
-  margin-top: 6px;
+  margin-right: 25px;
+  margin-left: 1px;
+  margin-top: 8px;
+  margin-bottom: -1px;
 }
 
 //.photo-editor__filters-range {
@@ -194,7 +203,7 @@
   width: 280px;
   height: 56px;
   border-radius: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   padding-left: 0;
   outline: none;
 }
@@ -219,6 +228,21 @@
   .photo-editor__icon-comb {
     width: 22px;
     height: 22px;
+
+    &--copy {
+      fill: #d22856;
+      opacity: 1;
+    }
+
+    &--contrast {
+      fill: #d22856;
+      opacity: 1;
+    }
+
+    &--fill {
+      fill: #d22856;
+      opacity: 1;
+    }
   }
 
   .photo-editor__title {
@@ -277,10 +301,10 @@
     display: flex;
     flex-direction: column;
     margin-right: 0;
-    padding-bottom: 25px;
+    padding-bottom: 16px;
     margin-top: -3px;
     padding-left: 19px;
-    padding-top: 35px;
+    padding-top: 30px;
   }
 
   .photo-editor__filters-range::before {
@@ -451,7 +475,6 @@
   .photo-editor__icon-comb {
     width: 44px;
     height: 44px;
-    margin-top: -33px;
   }
 
   .photo-editor__content-wrapper {
@@ -461,15 +484,15 @@
   }
 
   .photo-editor__form-photo {
-    padding-top: 34px;
+    padding-top: 40px;
     padding-left: 400px;
     background: url("../img/photo-road-desktop@1x.jpg");
     background-position: center;
-    background-position-y: 31%;
+    background-position-y: 37%;
     background-position-x: 12%;
     background-size: 32%;
     background-repeat: no-repeat;
-    padding-bottom: 19px;
+    padding-bottom: 25px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/photo-road-desktop@2x.jpg");
@@ -563,6 +586,11 @@
     margin-bottom: 69px;
   }
 
+  .photo-editor__title {
+    margin-bottom: -7px;
+    padding-top: 0;
+  }
+
   .photo-editor__filters-buttons {
     margin-left: 65px;
     margin-top: -1px;
@@ -596,6 +624,30 @@
   .photo-editor__icon-contrast {
     width: 32px;
     height: 32px;
-    padding-left: 5px;
+  }
+
+  .photo-editor__button-icon {
+    border: 0;
+    background: 0 0;
+    width: 48px;
+    height: 44px;
+    margin-top: -33px;
+    margin-right: 7px;
+    margin-bottom: -6px;
+
+    &--copy {
+      width: 48px;
+      height: 44px;
+    }
+
+    &--fill {
+      width: 50px;
+      height: 44px;
+    }
+
+    &--contrast {
+      width: 45px;
+      height: 35px;
+    }
   }
 }

@@ -1,4 +1,4 @@
-.control__desktop-slide {
+.control-desktop__slide {
   border: none;
   background: none;
 
@@ -10,14 +10,9 @@
     display: none;
   }
 }
-//.control__desktop-slide {
-//  &--right {
-//    display: none;
-//  }
-//}
 
 @media (min-width: @tablet-width) {
-  .control__desktop-slide {
+  .control-desktop__slide {
     &--left {
       display: none;
     }
@@ -26,20 +21,14 @@
       display: none;
     }
   }
-
-  //.control__desktop-slide {
-  //  &--right {
-  //    display: none;
-  //  }
-  //}
 }
 
 @media (min-width: @desktop-width) {
-  .control__desktop {
+  .control-desktop {
     display: block;
   }
 
-  .control__desktop-slide {
+  .control-desktop__slide {
     &--right {
       position: absolute;
       display: block;
@@ -75,23 +64,4 @@
       opacity: 0.1;
     }
   }
-
-  //.control__desktop-slide {
-  //  &--left {
-  //    position: absolute;
-  //    display: block;
-  //    top: 204px;
-  //    opacity: .3;
-  //    left: -153px;
-  //    cursor: pointer;
-  //  }
-  //
-  //  &--left:hover {
-  //    opacity: 0.6;
-  //  }
-  //
-  //  &--left:active {
-  //    opacity: 0.1;
-  //  }
-  //}
 }

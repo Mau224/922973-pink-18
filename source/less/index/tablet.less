@@ -2,12 +2,12 @@
   width: 320px;
   position: relative;
   overflow: hidden;
-  margin: 23px auto 50px;
-  padding-bottom: 91px;
-  padding-top: 62px;
+  margin: 5px auto 50px;
+  padding-bottom: 95px;
+  padding-top: 76px;
 }
 
-.tablet__mobaile-container::before {
+.tablet::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -101,8 +101,7 @@
   margin: 0 auto;
   margin-top: 32px;
   text-align: center;
-  padding-right: 8px;
-  padding-bottom: 10px;
+  padding-bottom: 19px;
 }
 
 .tablet__element {
@@ -139,12 +138,12 @@
 
 .tablet__hit::before {
   content: "";
-  width: 61px;
-  height: 61px;
+  width: 74px;
+  height: 71px;
   top: 3px;
   left: 550px;
   position: absolute;
-  background: url("../img/hit-ribbon.png");
+  background: url("../img/bg-hit.svg");
 }
 
 .tablet__hit::after {
@@ -154,8 +153,8 @@
   color: white;
   font-size: 14px;
   transform: rotate(-45deg);
-  top: 0;
-  left: 526px;
+  top: 7px;
+  left: 530px;
   font-weight: lighter;
   margin-top: 7px;
   position: absolute;
@@ -182,7 +181,7 @@
   display: inline-block;
   width: 6px;
   height: 6px;
-  padding: 8px;
+  padding-right: 14px;
   border-radius: 50%;
   cursor: pointer;
   border: none;
@@ -226,6 +225,7 @@
 .tablet__controls-slide.tablet__controls-slide {
   &--active::before {
     display: block;
+    margin-top: 0;
   }
 
   &--active::after {
@@ -233,7 +233,7 @@
   }
 }
 
-.tablet__mobaile-container {
+.tablet {
   background-image: url("../img/back-mobail.svg");
   background-size: 660px;
   background-position-y: -68px;
@@ -279,12 +279,12 @@
 
   .tablet__cell {
     padding: 0;
-    width: 106px;
+    width: 110px;
   }
 
   .tablet__element {
     padding: 0;
-    width: 106px;
+    width: 109px;
   }
 
   .tablet__header {
@@ -469,12 +469,12 @@
 
   .tablet__hit::before {
     content: "";
-    width: 60px;
-    height: 61px;
+    width: 74px;
+    height: 71px;
     top: 0;
     left: 470px;
     position: absolute;
-    background: url("../img/hit-ribbon.png");
+    background: url("../img/bg-hit.svg");
   }
 
   .tablet__hit::after {
@@ -484,12 +484,12 @@
     color: white;
     font-size: 16px;
     transform: rotate(-45deg);
-    top: 3px;
-    left: 444px;
+    top: 7px;
+    left: 451px;
     position: absolute;
   }
 
-  .tablet__mobaile-container::before {
+  .tablet::before {
     display: none;
   }
 

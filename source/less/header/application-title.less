@@ -1,0 +1,82 @@
+.application-title__info-headline {
+  width: 229px;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+  padding-top: 7px;
+  padding-bottom: 75px;
+
+  &--form {
+    padding-bottom: 45px;
+  }
+}
+
+.application-title {
+  padding-top: 20px;
+  background: url("../img/bg-back-tablet@1x.jpg") no-repeat 100%;
+
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .application-title__info-headline {
+    width: 476px;
+    font-size: 50px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 132px;
+
+    &--form {
+      padding-top: 35px;
+      line-height: 64px;
+      padding-bottom: 83px;
+    }
+  }
+
+  .application-title {
+    padding-top: 20px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50%;
+    background-color: #283645;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .application-title__info-headline {
+    width: 652px;
+    font-size: 50px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 36px;
+    padding-bottom: 30px;
+
+    &--form {
+      width: 771px;
+      padding-bottom: 38px;
+    }
+  }
+
+  .application-title {
+    padding-top: 20px;
+    padding-bottom: 66px;
+    background: none;
+  }
+}

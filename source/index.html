@@ -21,7 +21,7 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper-logo">
             <div class="main-nav__logo">
-              <div class="main-nav__header-link--index">
+              <div class="main-nav__header-link main-nav__header-link--index">
                 <picture>
                   <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
                   <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet-pink.svg">
@@ -85,7 +85,7 @@
     <p class="page-main__headline page-main__headline-first">Устали от серости мегаполиса?</p>
     <p class="page-main__headline page-main__headline-second">Нам есть, что вам предложить!</p>
     <section class="presentation">
-      <div class="presentation container__presentation">
+      <div class="presentation__container">
         <ul class="presentation__list">
           <li class="presentation__item">
             <picture>
@@ -121,7 +121,7 @@
         <div class="presentation__clock-wrapper">
           <div class="presentation__clock-text-wrraper">
             <p class="presentation__clock-headline"><span class="presentation__clock-span">Эффект</span> на 24 часа!</p>
-            <p class="presentation__clock-text">Британские ученые провели исследования и доказали,<span class="presentation__clock-center"></span> что положительный эффект от использования приложения длится целые сутки!</p>
+            <p class="presentation__clock-text">Британские ученые провели исследования и доказали, что положительный эффект<span class="presentation__clock-center"></span> от использования приложения длится целые сутки!</p>
             <a href="#" class="presentation__clock-link">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -133,7 +133,7 @@
       <div class="slider__wrapper">
         <div class="slider__slide active">
           <div class=" slider__slide-wrapper">
-            <h3>Николай Петров</h3>
+            <h3 class="slider__author-name">Николай Петров</h3>
             <p class="slider__slide-info">25 лет, водитель трамвая</p>
           </div>
           <p class="slider__reviews">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
@@ -146,21 +146,22 @@
       </div>
     </div>
     <div class="slider__controls">
-      <button class="slider__slide-control active" data-slider__slide="0"></button>
-      <button class="slider__slide-control" data-slider__slide="1"></button>
-      <button class="slider__slide-control" data-slider__slide="2"></button>
+      <button class="slider__slide-control slider__slide-control--active" type="button" data-slider__slide="0"></button>
+      <button class="slider__slide-control" type="button" data-slider__slide="1"></button>
+      <button class="slider__slide-control" type="button" data-slider__slide="2"></button>
     </div>
-    <div class="slider control__desktop">
-      <button class="control__desktop-slide" data-slider__slide="0">
-        <img class="control__desktop-slide--left" src="img/left-arrow-svg.svg" width="22" height="41" alt="левая стрелка">
+    <div class="slider control-desktop">
+      <button class="control-desktop__slide" type="button" data-slider__slide="0">
+<!--        <img class="control-desktop__slide&#45;&#45;left" src="img/icon-left-arrow-svg.svg" width="22" height="41" alt="левая стрелка">-->
+        <svg class="control-desktop__slide--left" width="22" height="41"><use xlink:href="img/sprite.svg#icon-left-arrow-svg"></use></svg>
       </button>
-      <button class="control__desktop-slide" data-slider__slide="1">
-        <img class="control__desktop-slide--right" src="img/right-arrow-svg.svg" width="22" height="41" alt="правая стрелка">
+      <button class="control-desktop__slide" type="button" data-slider__slide="1">
+        <svg class="control-desktop__slide--right" width="22" height="41"><use xlink:href="img/sprite.svg#icon-right-arrow-svg"></use></svg>
       </button>
     </div>
   </section>
 
-<div class="tablet__mobaile-container">
+<div class="tablet">
   <section class="tablet__static">
     <div id="tablet__main-section">
       <div class="tablet__wrapper">
@@ -210,13 +211,13 @@
             </tr>
           </table>
         </div>
-        <div class="tablet__controls-wrapper">
-          <div class="tablet__controls">
-            <button class="tablet__controls-slide" data-slider__slide="0"></button>
-            <button class="tablet__controls-slide tablet__controls-slide--active" data-slider__slide="1"></button>
-            <button class="tablet__controls-slide" data-slider__slide="2"></button>
-          </div>
-        </div>
+      </div>
+    </div>
+    <div class="tablet__controls-wrapper">
+      <div class="tablet__controls">
+        <button class="tablet__controls-slide" type="button" data-slider__slide="0"></button>
+        <button class="tablet__controls-slide tablet__controls-slide--active" type="button" data-slider__slide="1"></button>
+        <button class="tablet__controls-slide" type="button" data-slider__slide="2"></button>
       </div>
     </div>
   </section>
@@ -227,16 +228,16 @@
       <p class="contact__text">Остались вопросы? Свяжитесь с нами!</p>
         <ul class="contact__list">
             <li class="contact__item">
-              <b>Звоните:</b><br>
+              <b>Звоните:</b>
               <a href="tel:+78125556666">+7 (812) 555-66-66</a>
             </li>
             <li class="contact__item contact__item--one">
-              <b class="contact__text-header contact__text-header--two">Пишите:</b><br>
+              <b class="contact__text-header contact__text-header--two">Пишите:</b>
               <a class="contact__academy-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
             <li class="contact__item contact__item--two">
-              <b class="contact__text-header contact__text-header--tree">Приезжайте в гости:</b><br>
-              <a class="contact__text-link">ул. Большая<br>Конюшенная, 19/8 </a>
+              <b class="contact__text-header contact__text-header--tree">Приезжайте в гости:</b>
+              <a class="contact__text-link">ул. Большая<br>Конюшенная, 19/8</a>
             </li>
         </ul>
     </div>

@@ -114,44 +114,12 @@
 }
 
 .main-nav--nojs .site-list__item--active a {
-  padding-right: 21px;
-  padding-left: 21px;
-
   text-align: center;
 }
 
 .main-nav--nojs .user-list__item {
   display: block;
   background-color: #283645;
-}
-
-.main-nav__info-headline {
-  width: 229px;
-  font-size: 24px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-  margin: 0 auto;
-  padding-top: 7px;
-  padding-bottom: 75px;
-
-  &--form {
-    padding-bottom: 45px;
-  }
-}
-
-.main-nav__info-background {
-  padding-top: 20px;
-  background: url("../img/bg-back-tablet@1x.jpg") no-repeat 100%;
-
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/bg-back-tablet@2x.jpg");
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -169,6 +137,7 @@
     height: 40px;
     filter: brightness(10);
     fill: white;
+    padding-left: 4px;
   }
 
   .main-nav__wrapper-logo {
@@ -200,33 +169,6 @@
 
   .main-nav--opened .main-nav__toggle-img--opened {
     display: none;
-  }
-
-  .main-nav__info-headline {
-    width: 476px;
-    font-size: 50px;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-    color: #ffffff;
-    padding-top: 40px;
-    padding-bottom: 132px;
-
-    &--form {
-      padding-top: 35px;
-      line-height: 64px;
-      padding-bottom: 73px;
-    }
-  }
-
-  .main-nav__info-background {
-    padding-top: 20px;
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50%;
-    background-color: #283645;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-    }
   }
 
   .main-nav__logo {
@@ -276,8 +218,6 @@
   .main-nav--nojs .site-list__item--active a {
     padding-right: 21px;
     padding-left: 21px;
-
-    text-align: left;
   }
 
   .main-nav--nojs .main-nav {
@@ -308,7 +248,7 @@
   .main-nav {
     display: flex;
     flex-direction: row;
-    padding-top: 34px;
+    padding-top: 26px;
   }
 
   .main-nav__logo {
@@ -324,32 +264,9 @@
     width: auto;
     position: relative;
     bottom: 18px;
-    padding-top: 0;
     justify-content: flex-start;
     padding-bottom: 40px;
+    padding-top: 7px;
     border-bottom: none;
-  }
-
-  .main-nav__info-headline {
-    width: 652px;
-    font-size: 50px;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 36px;
-    padding-bottom: 30px;
-
-    &--form {
-      width: 771px;
-      padding-bottom: 38px;
-    }
-  }
-
-  .main-nav__info-background {
-    padding-top: 20px;
-    padding-bottom: 66px;
-    background: none;
   }
 }
