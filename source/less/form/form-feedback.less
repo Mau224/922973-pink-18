@@ -52,12 +52,6 @@
 .form-feedback__label-item {
   margin-bottom: 20px;
   margin-top: 10px;
-
-  &:checked + .form-feedback__label-radio {
-    &::after {
-      content: "";
-    }
-  }
 }
 
 .form-feedback__label-radio {
@@ -112,6 +106,12 @@
   background-color: #d22856;
 }
 
+&:checked + .form-feedback__label-radio {
+  &::after {
+    content: "";
+  }
+}
+
 //.form-feedback__label-radio:hover::before {
 //  border-color: black;
 //}
@@ -133,12 +133,6 @@
 
 .form-feedback__label-span {
   padding-left: 20px;
-}
-
-&:checked + .form-feedback__label-radio {
-  &::after {
-    content: "";
-  }
 }
 
 //.form-feedback__input {
@@ -255,7 +249,6 @@
     content: "";
   }
 }
-
 
 .form-feedback__label-checkbox::before {
   content: "";

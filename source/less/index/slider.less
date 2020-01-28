@@ -108,7 +108,7 @@
 
   &--active::before {
     display: block;
-    margin-left: -10px;
+    margin-left: -3px;
   }
 
   &--active::after {
@@ -183,6 +183,12 @@
     margin-top: 26px;
   }
 
+  .slider__slide-control {
+    &--active::before {
+      margin-left: -5px;
+    }
+  }
+
   .slider__slide.active {
     display: flex;
     flex-direction: column-reverse;
@@ -191,47 +197,51 @@
     margin-top: 20px;
   }
 
-  @media (min-width: @desktop-width) {
-    .slider {
-      background: url("../img/quotes-svg.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-position-y: calc(100% + -463px);
-      background-position-x: 279px;
-      padding-top: 183px;
-      margin: 11px auto -5px;
-    }
+  .slider__controls-tablet {
+    display: none;
+  }
+}
 
-    .slider__slide-info {
-      margin-top: 13px;
-      font-size: 18px;
-    }
+@media (min-width: @desktop-width) {
+  .slider {
+    background: url("../img/quotes-svg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: calc(100% + -463px);
+    background-position-x: 279px;
+    padding-top: 183px;
+    margin: 11px auto -5px;
+  }
 
-    .slider__controls {
-      display: none;
-    }
+  .slider__slide-info {
+    margin-top: 13px;
+    font-size: 18px;
+  }
 
-    //.slider__slide-info {
-    //  padding-top: 10px;
-    //}
+  .slider__controls {
+    display: none;
+  }
 
-    .slider__reviews {
-      margin-top: -33px;
-      width: 688px;
-      padding-left: 0;
-      margin-left: -30px;
-    }
+  //.slider__slide-info {
+  //  padding-top: 10px;
+  //}
 
-    .slider h3 {
-      font-size: 24px;
-      margin-left: 4px;
-      margin-top: 24px;
-      margin-bottom: -9px;
-    }
+  .slider__reviews {
+    margin-top: -33px;
+    width: 688px;
+    padding-left: 0;
+    margin-left: -30px;
+  }
 
-    .slider__slide.active {
-      margin-bottom: 0;
-    }
+  .slider h3 {
+    font-size: 24px;
+    margin-left: 4px;
+    margin-top: 24px;
+    margin-bottom: -9px;
+  }
+
+  .slider__slide.active {
+    margin-bottom: 0;
   }
 
   .slider__slide-control__author-info {
