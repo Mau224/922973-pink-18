@@ -13,13 +13,25 @@
   padding-bottom: 75px;
 
   &--form {
-    padding-bottom: 51px;
+    padding-bottom: 44px;
   }
 }
 
 .application-title {
   padding-top: 20px;
   padding-bottom: 6px;
+  background: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #1e2631;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-y: -66px;
+
+  margin: 0 auto;
+  width: auto;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -36,7 +48,20 @@
     &--form {
       padding-top: 51px;
       line-height: 1.2;
-      padding-bottom: 79px;
+      padding-bottom: 69px;
+    }
+  }
+
+  .application-title {
+    background: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #1e2631;
+    background-position: top;
+    background-position-y: -111px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
 }
@@ -50,13 +75,13 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 42px;
+    padding-top: 51px;
     padding-bottom: 30px;
 
     &--form {
       width: 771px;
-      padding-bottom: 33px;
-      padding-top: 49px;
+      padding-bottom: 35px;
+      padding-top: 55px;
     }
   }
 

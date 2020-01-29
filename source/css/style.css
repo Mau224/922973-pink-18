@@ -917,7 +917,7 @@ a {
   margin-right: 32px;
   outline: none;
 }
-.reviews__like-wrapper-main {
+.reviews__like-wrapper--main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -939,7 +939,7 @@ a {
           order: 2;
 }
 @media (min-width: 660px) {
-  .reviews__like-wrapper-main {
+  .reviews__like-wrapper--main {
     width: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -986,7 +986,7 @@ a {
   }
 }
 @media (min-width: 960px) {
-  .reviews__like-wrapper-main {
+  .reviews__like-wrapper--main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1670,7 +1670,7 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-.footer__disable {
+.footer--disable {
   display: none;
 }
 .footer__copyright-text {
@@ -3879,7 +3879,7 @@ a {
     padding-top: 60px;
     background-color: #ececec;
   }
-  .button-good {
+  .button__good {
     width: 456px;
   }
   .modal-form {

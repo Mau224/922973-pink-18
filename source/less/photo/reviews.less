@@ -67,7 +67,7 @@
     text-align: left;
     font-size: 12px;
     margin-left: -18px;
-    margin-top: 11px;
+    margin-top: 9px;
     text-transform: uppercase;
   }
 }
@@ -131,6 +131,7 @@
 .reviews__author-name strong {
   font-size: 14px;
   font-style: normal;
+  font-weight: bold;
 }
 
 
@@ -149,7 +150,7 @@
   flex-wrap: wrap;
   width: 280px;
   background-color: #ececec;
-  margin: -5px auto 29px;
+  margin: -5px auto 20px;
 }
 
 .reviews__like-wrapper {
@@ -161,6 +162,15 @@
   padding-left: 13px;
   padding-top: 5px;
   padding-bottom: 7px;
+
+  &--main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 11px;
+    flex-direction: row-reverse;
+  }
 }
 
 .reviews__like-button {
@@ -169,15 +179,6 @@
   outline: none;
   background: none;
   border: none;
-}
-
-.reviews__like-wrapper-main {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: flex-end;
-  padding-left: 11px;
-  flex-direction: row-reverse;
 }
 
 .reviews__like-button--main {
@@ -193,7 +194,7 @@
 
 @media (min-width: @tablet-width) {
   .reviews__wrapper {
-    width: 660px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,13 +233,13 @@
     font-family: "OpenSans", "Arial", sans-serif;
     font-size: 14px;
     padding-bottom: 10px;
-    padding-left: 9px;
+    padding-left: 12px;
     order: 0;
     padding-top: 9px;
 
     &--main {
       margin-bottom: 2px;
-      margin-left: 19px;
+      margin-left: 17px;
       margin-top: 18px;
       font-size: 14px;
     }
@@ -253,6 +254,7 @@
     background-color: #ececec;
     padding-bottom: 16px;
     margin-bottom: 18px;
+    padding-left: 2px;
   }
 
   //.reviews__author-name {
@@ -275,7 +277,7 @@
       width: auto;
       order: 2;
       margin-left: 27px;
-      margin-top: -11px;
+      margin-top: -7px;
     }
   }
 
@@ -318,17 +320,6 @@
     margin-bottom: 44px;
   }
 
-  .reviews__like-wrapper-main {
-    width: 200px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: baseline;
-    justify-content: normal;
-    margin-left: auto;
-    margin-right: 6px;
-    margin-top: 15px;
-  }
-
   .reviews__like-button {
     order: 0;
     padding-right: 32px;
@@ -347,6 +338,17 @@
     flex-direction: row-reverse;
     padding-left: 28px;
     justify-content: space-between;
+
+    &--main {
+      width: 200px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: baseline;
+      justify-content: normal;
+      margin-left: auto;
+      margin-right: 6px;
+      margin-top: 23px;
+    }
   }
 
   .reviews__block-wrapper-blocks {
@@ -360,13 +362,15 @@
   .reviews__block-wrapper {
     width: 300px;
     display: flex;
-    margin: 0;
-    margin-right: 5px;
-    margin-left: 18px;
+    margin: 0 5px 0 16px;
   }
 
   .reviews__block-wrapper-main {
-    width: 660px;
+    width: 100%;
+  }
+
+  .photo-editor__form-main {
+    width: 100%;
   }
 }
 
@@ -381,9 +385,15 @@
   }
 
   .reviews__author-name {
+    padding-left: 18px;
+
     &--main {
-      margin-left: 18px;
+      margin-left: 10px;
     }
+  }
+
+  .reviews__like-button {
+    padding-right: 26px;
   }
 
   .reviews__author-like {
@@ -416,7 +426,6 @@
 
   .reviews__item {
     width: 300px;
-    margin-left: 8px;
     background-color: #ececec;
     padding-bottom: 14px;
     margin-bottom: 55px;
@@ -429,6 +438,8 @@
   }
 
   .reviews__text {
+    margin-left: 34px;
+
     &--active {
       order: 2;
       margin-left: 27px;
@@ -457,15 +468,6 @@
     padding-bottom: 0;
   }
 
-  .reviews__like-wrapper-main {
-    display: flex;
-    align-items: baseline;
-    order: 1;
-    margin-left: auto;
-    margin-right: 9px;
-    margin-top: 7px;
-  }
-
   .reviews__block-wrapper-blocks {
     width: 980px;
     display: flex;
@@ -474,13 +476,35 @@
   }
 
   .reviews__block-wrapper {
-    width: 300px;
-    margin-right: 11px;
-    margin-left: 6px;
+    margin: 0;
     display: flex;
+
+    &--center {
+      margin-right: 0;
+      margin-left: 11px;
+    }
+
+    &--first {
+      margin-right: 7px;
+      margin-left: 4px;
+    }
+
+    &--last {
+      margin-left: 19px;
+    }
   }
 
   .reviews__like-wrapper {
     padding-bottom: 5px;
+    margin-left: 6px;
+
+    &--main {
+      display: flex;
+      align-items: baseline;
+      order: 1;
+      margin-left: auto;
+      margin-right: 13px;
+      margin-top: 3px;
+    }
   }
 }
