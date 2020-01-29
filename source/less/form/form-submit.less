@@ -1,4 +1,4 @@
-.form-submit__wrapper {
+.form-submit {
   width: 320px;
   margin: 0 auto;
 }
@@ -7,7 +7,7 @@
   width: 278px;
   height: 60px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
@@ -18,7 +18,8 @@
   margin-left: 21px;
   border: 2px solid #2aab6d;
   border-radius: 2px;
-  margin-top: 47px;
+  margin-top: 49px;
+  text-transform: uppercase;
 }
 
 .form-submit__notification-aux {
@@ -43,19 +44,28 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form-submit__wrapper {
+  .form-submit {
     display: flex;
-    width: 660px;
+    width: 640px;
+    margin: 0;
     align-items: center;
     justify-content: space-between;
     order: 5;
-    margin-bottom: 48px;
+    margin-bottom: 43px;
   }
 
   .form-submit__notification {
     margin-top: 94px;
-    font-size: 16px;
-    margin-left: 140px;
+    margin-left: 142px;
+    text-transform: uppercase;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.14;
+    letter-spacing: normal;
+    text-align: right;
   }
 
   .form-submit__button {
@@ -66,13 +76,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form-submit__wrapper {
+  .form-submit {
     display: flex;
-    width: 960px;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     order: 5;
-    margin-bottom: -25px;
+    margin-bottom: -30px;
   }
 
   .form-submit__notification-aux {
@@ -85,12 +95,12 @@
     width: 312px;
     display: flex;
     margin-top: 81px;
-    margin-left: 331px;
+    margin-left: 327px;
   }
 
   .form-submit__button {
     width: 297px;
-    margin-top: 65px;
+    margin-top: 53px;
     margin-left: 12px;
   }
 }

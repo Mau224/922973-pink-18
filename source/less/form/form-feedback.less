@@ -33,7 +33,7 @@
   margin-bottom: 5px;
   line-height: 1.29;
   text-transform: uppercase;
-  padding-top: 20px;
+  padding-top: 21px;
 }
 
 .form-feedback__fieldset {
@@ -49,7 +49,7 @@
   }
 }
 
-.form-feedback__label-radio-item {
+.form-feedback__label-item {
   margin-bottom: 20px;
   margin-top: 10px;
 
@@ -66,7 +66,7 @@
   display: block;
   padding-left: 49px;
   padding-top: 5px;
-  padding-bottom: 7px;
+  padding-bottom: 9px;
   font-size: 18px;
   line-height: 30px;
   cursor: pointer;
@@ -84,7 +84,7 @@
   background-color: #ececec;
   order: 0;
   padding-top: 12px;
-  padding-bottom: 39px;
+  padding-bottom: 30px;
   margin: 31px auto -12px;
 }
 
@@ -135,12 +135,6 @@
   padding-left: 20px;
 }
 
-&:checked + .form-feedback__label-radio {
-  &::after {
-    content: "";
-  }
-}
-
 //.form-feedback__input {
 //  padding: 12px;
 //  border: 2px solid #e5e5e5;
@@ -165,7 +159,7 @@
   list-style: none;
   padding-left: 21px;
   margin-bottom: -12px;
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 .form-feedback__label {
@@ -195,10 +189,9 @@
   list-style: none;
   background-color: #ececec;
   padding-top: 0;
-  padding-bottom: 35px;
+  padding-bottom: 28px;
   padding-left: 0;
-  margin: 0 auto;
-  margin-bottom: -21px;
+  margin: 0 auto -17px;
 }
 
 .form-feedback__achivments-item {
@@ -213,7 +206,7 @@
 
 .form-feedback__input {
   display: block;
-  padding: 14px 20px 15px;
+  padding: 14px 17px 15px;
   box-sizing: border-box;
   min-height: 63px;
   border: 2px solid lightgray;
@@ -225,6 +218,10 @@
 }
 
 .form-feedback__message-checkbox {
+  display: none;
+}
+
+.form-feedback__input-radio {
   display: none;
 }
 
@@ -256,7 +253,6 @@
     content: "";
   }
 }
-
 
 .form-feedback__label-checkbox::before {
   content: "";
@@ -328,6 +324,12 @@
   width: 320px;
 }
 
+&:checked + .form-feedback__label-radio {
+  &::after {
+    content: "";
+  }
+}
+
 @media (min-width: @tablet-width) {
   .form-feedback__fieldset {
     width: 100%;
@@ -344,10 +346,9 @@
       //border-color: #ececec;
       //border-image: initial;
       margin-bottom: 0;
-      padding: 0;
       width: 616px;
       margin-top: 20px;
-      padding-bottom: 42px;
+      padding: 0 0 46px;
     }
 
     &--achivments {
@@ -375,10 +376,10 @@
       //border-width: 2px;
       margin-top: -42px;
       padding: 47px 0 59px;
+      margin-bottom: 2px;
     }
 
     &--name {
-      width: 660px;
       margin: 0 auto;
       border: none;
     }
@@ -400,15 +401,15 @@
 
   .form-feedback__input {
     width: 100%;
-    margin-right: 20px;
+    margin-right: -21px;
 
     &--name {
       width: 521px;
     }
 
     &--padding {
-      padding-left: 12px;
-      width: 600px;
+      padding-left: 19px;
+      width: 660px;
     }
 
     &--contacts {
@@ -424,7 +425,7 @@
 
   .form-feedback__label-checkbox::after {
     left: -20px;
-    top: 51px;
+    top: 48px;
   }
 
   .form-feedback__fieldset-messages {
@@ -447,7 +448,7 @@
     line-height: 30px;
     cursor: pointer;
     width: 260px;
-    margin-left: 40px;
+    margin-left: 38px;
     margin-bottom: 32px;
     margin-top: -28px;
     padding-left: 24px;
@@ -546,14 +547,20 @@
   //  }
   //}
 
-  .form-feedback__label-radio-item {
+  .form-feedback__label-item {
     padding-left: 56px;
     padding-top: 6px;
+
+    &--first {
+      margin-top: 16px;
+      margin-bottom: 17px;
+    }
   }
 
   .form-feedback__label-radio {
     width: 200px;
     text-align: left;
+    padding-bottom: 5px;
   }
 
   .form-feedback__label-span {
@@ -609,6 +616,15 @@
     &--padding {
       margin-right: -8px;
     }
+
+    &--patronymic {
+      margin-top: 10px;
+    }
+
+    &--margin {
+      margin-top: -1px;
+      margin-bottom: -6px;
+    }
   }
 
   .form-feedback__legend--contacts {
@@ -621,7 +637,7 @@
     flex-direction: column;
     align-items: flex-start;
     list-style: none;
-    padding-top: 30px;
+    padding-top: 28px;
     margin-bottom: 0;
   }
 
@@ -635,24 +651,11 @@
   //}
 
   .form-feedback__name-item {
-    width: 660px;
+    width: 616px;
     text-align: left;
     display: flex;
     align-items: center;
     margin-bottom: 47px;
-
-    &--phone::before {
-      content: "";
-      position: absolute;
-      width: 59px;
-      height: 59px;
-      left: 494px;
-      top: 60px;
-      background-color: #ececee;
-      background-image: url("../img/phone-svg.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
 
     &--contacts {
       display: flex;
@@ -661,19 +664,6 @@
       align-items: flex-start;
       width: 50%;
       margin-bottom: 33px;
-    }
-
-    &--email::before {
-      content: "";
-      position: absolute;
-      width: 59px;
-      height: 59px;
-      left: 494px;
-      top: 185px;
-      background-color: #ececee;
-      background-image: url("../img/mail-svg.svg");
-      background-repeat: no-repeat;
-      background-position: center;
     }
   }
 
@@ -693,8 +683,8 @@
   .form-feedback__textarea {
     width: 496px;
     height: 190px;
-    padding-top: 20px;
-    margin: -9px auto 1px;
+    padding-top: 12px;
+    margin: -9px auto -6px;
   }
 
   .form-feedback__legend {
@@ -708,6 +698,38 @@
       width: 318px;
     }
   }
+
+  .form-feedback__input-wrap {
+    position: relative;
+
+    &--email::before {
+      content: "";
+      position: absolute;
+      width: 59px;
+      height: 59px;
+      right: -19px;
+      top: -5px;
+      border-radius: 4px;
+      background-color: #ececee;
+      background-image: url("../img/mail-svg.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--phone::before {
+      content: "";
+      position: absolute;
+      width: 59px;
+      height: 59px;
+      right: -19px;
+      top: -5px;
+      border-radius: 4px;
+      background-color: #ececee;
+      background-image: url("../img/phone-svg.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -719,15 +741,13 @@
       padding-left: 46px;
       padding-right: 19px;
       margin-bottom: 9px;
-      margin-top: 9px;
+      margin-top: 12px;
       margin-left: 46px;
       padding-top: 4px;
     }
 
     &--name {
-      margin: 0 auto;
-      margin-right: 74px;
-      margin-top: 37px;
+      margin: 33px 74px 0 auto;
     }
 
     &--achivments {
@@ -738,19 +758,19 @@
     &--emotions {
       width: 916px;
       padding-left: 14px;
-      padding-top: 40px;
-      padding-bottom: 50px;
+      padding-top: 46px;
+      padding-bottom: 51px;
     }
 
     &--contacts {
-      margin-top: -32px;
+      margin-top: -26px;
       margin-bottom: 71px;
       margin-left: 0;
       width: 940px;
     }
   }
 
-  //.form-feedback__label-radio-item {
+  //.form-feedback__label-item {
   //  padding-left: 26px;
   //  padding-top: 6px;
   //}
@@ -767,7 +787,7 @@
     &--name {
       margin-right: 20px;
       padding-top: 4px;
-      padding-left: 17px;
+      padding-left: 10px;
     }
 
     &--padding {
@@ -781,7 +801,14 @@
     }
 
     &--margin {
-      padding-left: 50px;
+      padding-left: 52px;
+      margin-top: -10px;
+    }
+
+    &--patronymic {
+      margin-top: -4px;
+      margin-left: 1px;
+      margin-right: 24px;
     }
   }
 
@@ -822,13 +849,13 @@
     }
 
     &--name {
-      width: 336px;
-      margin-left: -7px;
+      width: 342px;
+      margin-left: -4px;
     }
 
     &--padding {
       width: 378px;
-      margin-left: 24px;
+      margin-left: 31px;
     }
   }
 
@@ -858,6 +885,18 @@
 
   .form-feedback__label-wrapper {
     padding-left: 40px;
+
+    &--first-column {
+      padding-left: 44px;
+    }
+
+    &--second-column {
+      padding-left: 48px;
+    }
+
+    &--third-column {
+      padding-left: 45px;
+    }
   }
 
   .form-feedback__achivments-wrapper {
@@ -870,17 +909,6 @@
   //    width: 936px;
   //  }
   //}
-
-  .form-submit__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    order: 5;
-  }
-
-  .form-submit__notification {
-    margin-top: 40px;
-  }
 
   .form-feedback__textarea {
     width: 816px;
@@ -929,7 +957,7 @@
   //}
 
   .form-feedback__list-contact {
-    width: 936px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -942,32 +970,6 @@
 
   .form-feedback__name-item {
     margin-bottom: 52px;
-
-    &--phone::before {
-      content: "";
-      position: absolute;
-      width: 59px;
-      height: 59px;
-      left: 368px;
-      top: 50px;
-      background-color: #ececee;
-      background-image: url("../img/phone-svg.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &--email::before {
-      content: "";
-      position: absolute;
-      width: 59px;
-      height: 59px;
-      top: 50px;
-      left: 813px;
-      background-color: #ececee;
-      background-image: url("../img/mail-svg.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
   }
 
   //.form-feedback__fieldset {
@@ -1004,12 +1006,20 @@
   //  }
   //}
 
-  .form-feedback__label-radio-item {
+  .form-feedback__label-item {
     padding-left: 26px;
-    padding-top: 6px;
+    padding-top: 3px;
   }
 
   .form-feedback__emotions-wrapper {
     margin-bottom: 4px;
+  }
+
+  .form-feedback__label-checkbox {
+    &--center-column {
+      margin-left: 41px;
+      padding-left: 26px;
+      margin-right: -12px;
+    }
   }
 }

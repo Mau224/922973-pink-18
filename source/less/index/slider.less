@@ -39,6 +39,7 @@
   width: 283px;
   padding-left: 19px;
   margin-top: -3px;
+  margin-bottom: 19px;
 }
 
 .slider__controls {
@@ -46,17 +47,18 @@
   margin-top: 7px;
 }
 
-.slider__slide-control {
-  position: relative;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  padding: 8px;
-  border-radius: 50%;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
+//.slider__slide-control {
+//  position: relative;
+//  display: inline-block;
+//  width: 6px;
+//  height: 6px;
+//  padding: 11px;
+//  padding-left: 5px;
+//  border-radius: 50%;
+//  cursor: pointer;
+//  border: none;
+//  background: none;
+//}
 
 .slider__slide-control::after {
   content: "";
@@ -86,31 +88,54 @@
   z-index: 100;
   width: 6px;
   height: 6px;
-  margin: -2px;
+  margin: -5px;
   margin-right: -6px;
   border: 3px solid black;
   border-radius: 50%;
 }
 
-.slider__slide-control.active::before {
-  display: block;
+.slider__slide-control {
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  padding: 11px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding-left: 10px;
+
+  &--active::before {
+    display: block;
+    margin-left: -3px;
+  }
+
+  &--active::after {
+    display: none;
+  }
 }
 
-.slider__slide-control.active::after {
-  display: none;
-}
+//.slider__slide-control {
+//  &--active::after {
+//    display: none;
+//  }
+//}
 
 .slider__slide-control__author-info {
   display: none;
 }
 
+.slider h3 {
+  margin-top: 17px;
+}
+
 @media (min-width: @tablet-width) {
   .slider {
     width: 630px;
-    margin: 0 auto;
-    margin-top: 106px;
     text-align: center;
     position: relative;
+    margin: 104px auto 0;
   }
 
   .slider__wrapper {
@@ -149,12 +174,19 @@
     letter-spacing: normal;
     text-align: center;
     padding-left: 5px;
+    padding-top: 5px;
   }
 
   .slider h3 {
     font-size: 20px;
     margin-bottom: 0;
-    margin-top: 29px;
+    margin-top: 26px;
+  }
+
+  .slider__slide-control {
+    &--active::before {
+      margin-left: -5px;
+    }
   }
 
   .slider__slide.active {
@@ -165,61 +197,51 @@
     margin-top: 20px;
   }
 
-  @media (min-width: @desktop-width) {
-    .slider {
-      background: url("../img/quotes-svg.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-position-y: calc(100% + -465px);
-      background-position-x: 279px;
-      padding-top: 183px;
-      margin: 11px auto -5px;
-    }
+  .slider__controls-tablet {
+    display: none;
+  }
+}
 
-    .slider__slide-info {
-      margin-top: 10px;
-      font-size: 18px;
-    }
-
-    .slider__controls {
-      display: none;
-    }
-
-    //.slider__slide-info {
-    //  padding-top: 10px;
-    //}
-
-    .slider__reviews {
-      margin-top: -23px;
-      width: 688px;
-      padding-left: 0;
-      margin-left: -30px;
-    }
-
-    .slider h3 {
-      font-size: 24px;
-      margin-left: 4px;
-      margin-top: 21px;
-      margin-bottom: -7px;
-    }
-
-    .slider__slide.active {
-      margin-bottom: 0;
-    }
+@media (min-width: @desktop-width) {
+  .slider {
+    background: url("../img/quotes-svg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: calc(100% + -463px);
+    background-position-x: 279px;
+    padding-top: 183px;
+    margin: 11px auto -5px;
   }
 
-  .slider__slide-control__author-info {
-    font-family: "OpenSans", "Arial", sans-serif;
-    display: block;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.67;
-    letter-spacing: normal;
-    text-align: center;
+  .slider__slide-info {
+    margin-top: 13px;
     font-size: 18px;
+  }
+
+  .slider__controls {
+    display: none;
+  }
+
+  //.slider__slide-info {
+  //  padding-top: 10px;
+  //}
+
+  .slider__reviews {
+    margin-top: -33px;
+    width: 688px;
+    padding-left: 0;
+    margin-left: -30px;
+  }
+
+  .slider h3 {
+    font-size: 24px;
     margin-left: 4px;
-    margin-top: 4px;
+    margin-top: 24px;
+    margin-bottom: -9px;
+  }
+
+  .slider__slide.active {
+    margin-bottom: 0;
   }
 
   .slider__slide-tablet {
